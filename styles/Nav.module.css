@@ -1,0 +1,94 @@
+.nav {
+	color: var(--nav-text-color);
+}
+.title {
+	margin: 0;
+	font-size: 2rem;
+}
+.navContent {
+	overflow-y: scroll;
+	color: var(--nav-text-color);
+	overscroll-behavior: contain;
+	z-index: 9;
+	background-color: var(--nav-background-color);
+	box-shadow: var(--box-shadow);
+	position: fixed;
+	width: 0;
+	height: fit-content;
+	margin: 50px 0 1em 0;
+	padding: 1em 1em 0.2em 0;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	transition: 0.5s ease;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.nav ::-webkit-scrollbar {
+	width: 10px;
+	height: 7px;
+}
+.nav ::-webkit-scrollbar-thumb {
+	background-color: teal;
+	border-radius: 4px;
+	background-clip: content-box;
+}
+.nav a:hover {
+	background-color: var(--link-hover-background-color);
+	color: var(--link-hover-text-color);
+}
+.nav .showNav {
+	width: 95%;
+	visibility: visible;
+	opacity: 1;
+}
+
+.nav ul {
+	list-style: none;
+	padding-left: 1em;
+	padding-top: 0.5em;
+	margin-top: 0.2em;
+	margin-left: 0.5em;
+}
+
+.nav li ul {
+	padding: 0;
+}
+
+.nav li {
+	padding: 0;
+}
+
+.nav ul li::before {
+	float: right;
+}
+.nav {
+	counter-reset: L1;
+}
+.nav ul li ul {
+	counter-reset: L2;
+}
+.nav ul li ul li ul {
+	counter-reset: L3;
+}
+.nav ul li ul li ul li ul {
+	counter-reset: L4;
+}
+
+.nav ul li::before {
+	counter-increment: L1;
+	content: counter(L1);
+}
+.nav ul li ul li::before {
+	counter-increment: L2;
+	content: counter(L1) "." counter(L2);
+}
+.nav ul li ul li ul li::before {
+	counter-increment: L3;
+	content: counter(L1) "." counter(L2) "." counter(L3);
+}
+.nav ul li ul li ul li ul li::before {
+	counter-increment: L4;
+	content: counter(L1) "." counter(L2) "." counter(L3) "." counter(L4);
+}

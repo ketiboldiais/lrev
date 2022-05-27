@@ -1,0 +1,77 @@
+# Civil Procedure
+
+## Personal Jurisdiction
+
+- ~Personal jurisdiction~ := the court's authority to render a decision binding
+  the parties appearing before it.
+  > General rule: A federal court has personal jurisdiction if the defendant
+  > could be subjected to the jurisdiction of the courts of the state where the
+  > federal district court is located. <FRCP section={'4(k)(1)(A)'}/>.
+- There are three types of personal jurisdiction:
+  <BubblePack
+    data={[
+      {val: "", id: "Personal Jurisdiction", parent: ""},
+      {val: 1, id: "In rem Jurisdiction", parent: "Personal Jurisdiction"},
+      {val: 1, id: "In personam Jurisdiction", parent: "Personal Jurisdiction"},
+      {
+        val: 1,
+        id: "Quasi in rem Jurisdiction",
+        parent: "Personal Jurisdiction",
+      },
+    ]}
+    textWrap={70}
+    yText={-30}
+    containerWidth={55}
+    containerHeight={55}
+  />
+- To determine if a court has personal jurisdiction, the following analysis is
+  used:
+  <FlowChart
+    data={` a[label="Does the state\nprovide jurisdiction\nthrough a long-arm statute?"]; a1[label="yes"]; a2[label="no"]; b[label="Does the federal\nconstitution permit\nexercising jurisdiction?"]; b1[label="yes"]; b2[label="no"]; c[label="No personal\njurisdiction"]; d[label="Personal\njurisdiction\nis proper"]; e[label="Do the traditional\njurisdiction bases\nprovide jurisdiction?"]; e1[label="yes"]; e2[label="no"]; a->a1->b; a->a2->e; e->e1->b; e->e2->c; b->b1->d; b->b2->c; `}
+    nodeShape="box"
+    width={550}
+    height={550}
+  />
+- There are two types of long-arm statutes:
+  1.  General long-arm statutes, and
+  2.  Enumerated long-arm statutes.
+- General long-arm statutes provide personal jurisdiction to the extent its
+  permitted under the federal constitution. Thus, if a state provides an
+  implicit long-arm statute, the court jumps straight to the constitutional
+  analysis for determining personal jurisdiction.
+  - Examples: California and Rhode Island's long-arm statutes.
+- Enumerated long-arm statutes explicitly provide the necessary conditions for
+  personal jurisdiction.
+  - Examples: New York's long-arm statute.
+
+## Subject Matter Jurisdiction
+
+- ~Subject matter jurisdiction~ := the court's authority to address a particular
+  issue.
+- There are four types of subject-matter jurisdiction:
+  <BubblePack
+    data={[
+      {id: "Subject-matter Jurisdiction", parent: ""},
+      {id: "Diversity Jurisdiction", parent: "Subject-matter Jurisdiction"},
+      {
+        id: "Federal Question Jurisdiction",
+        parent: "Subject-matter Jurisdiction",
+      },
+      {id: "Removal Jurisdiction", parent: "Subject-matter Jurisdiction"},
+      {id: "Supplemental Jurisdiction", parent: "Subject-matter Jurisdiction"},
+    ]}
+    textWrap={70}
+    width={600}
+    height={600}
+    yText={-35}
+    containerWidth={65}
+    containerHeight={60}
+    fontSize={"2em"}
+  />
+
+### Diversity Jurisdiction
+
+- ~Diversity jurisdiction~ := subject matter jurisdiction provided by <USC
+  title={'28'} section={'1332'}/>.
+- Diversity jurisdiction arose from the historical concern of protecting
+  out-of-state parties from local prejudice.

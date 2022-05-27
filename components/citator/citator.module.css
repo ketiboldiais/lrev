@@ -1,0 +1,11 @@
+.citator {
+	font-style: normal;
+	color: white;
+	white-space: pre;
+}
+.caps {
+	font-variant: small-caps;
+}
+.connective {
+	display: inline-block;
+}

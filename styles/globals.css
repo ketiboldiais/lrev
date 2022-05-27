@@ -1,0 +1,320 @@
+.light {
+	--background-color: rgb(255, 255, 255);
+	--page-title-color: rgb(227, 227, 227);
+	--nav-background-color: #dee4e7;
+	--nav-text-color: #37474f;
+	--text-color: #393E46;
+	--doubly-linked-list-rect-fill: rgb(136, 207, 207);
+	--doubly-linked-list-focus-rect-fill: rgb(246, 177, 165);
+	--hover-background-color: teal;
+	--border-bottom: solid thin cyan;
+	--box-shadow: 2px 4px 6px 2px rgba(34, 34, 34, 0.721);
+	--heading-color: #487298;
+	--flowchart-stroke-color: #487298;
+	--flowchart-text-color: #487298;
+	--link-hover-background-color: black;
+	--link-hover-text-color: white;
+	--page-title-color: rgb(69, 69, 69);
+	--graph-edge-line-color: rgb(0, 196, 193);
+	--graph-text-color: rgb(104, 104, 104);
+	--graph-node-fill-color: rgb(255, 143, 123);
+	--graph-node-stroke-color:rgb(196, 0, 0);
+	--graph-node-focus-blue-color: rgb(94, 230, 200);
+	--graph-node-focus-blue-stroke-color: rgb(0, 92, 149);
+	--graph-node-focus-blue-text-color: rgb(0, 167, 167);
+	--hexmap-state-stroke-color: rgb(255, 255, 255);
+
+	/* Named colors */
+	--red: #bf0000;
+	--green: lime;
+	--teal: rgb(107, 193, 193);
+	--purple: rgb(171, 90, 171);
+	--orange: orange;
+	--grey: grey;
+}
+
+.dark {
+	--background-color: rgb(43, 43, 43);
+	--page-title-color: rgb(255, 255, 255);
+	--nav-background-color: rgb(153, 0, 0);
+	--nav-text-color: white;
+	--text-color: rgb(230, 230, 230);
+	--doubly-linked-list-rect-fill: rgb(136, 207, 207);
+	--doubly-linked-list-focus-rect-fill: rgb(246, 177, 165);
+	--hover-background-color: teal;
+	--border-bottom: solid thin cyan;
+	--box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.8);
+	--heading-color: rgb(76, 255, 219);
+	--flowchart-stroke-color: gold;
+	--flowchart-text-color: teal;
+	--link-hover-background-color: black;
+	--link-hover-text-color: white;
+
+	--page-title-color: rgba(11, 11, 11, 0.6);
+	--page-title-shadow: 2px 2px 3px rgba(211, 211, 211, 0.091);
+	
+	--graph-edge-line-color: rgb(134, 114, 0);
+	--graph-text-color: gold;
+	--graph-node-fill-color: rgb(255, 97, 69);
+	--graph-node-stroke-color:rgb(196, 0, 0);
+	--graph-node-focus-blue-color: rgb(94, 230, 200);
+	--graph-node-focus-blue-stroke-color: rgb(0, 92, 149);
+	--graph-node-focus-blue-text-color: cyan;
+	--hexmap-state-stroke-color: cyan;
+
+	/* Named colors */
+	--red: rgb(241, 37, 37);
+	--green: rgb(19, 110, 19);
+	--teal: teal;
+	--purple: purple;
+	--orange: orange;
+	--grey: grey;
+}
+
+@font-face {
+	font-family: "serif_main";
+	src: url("./fonts/serif_main_regular.woff");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "serif_main";
+	src: url("./fonts/serif_main_italics.woff");
+	font-style: italic;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "serif_main";
+	src: url("./fonts/serif_main_bold.woff");
+	font-style: normal;
+	font-weight: bold;
+}
+@font-face {
+	font-family: "sans_serif_main";
+	src: url("./fonts/sans_serif_main.woff");
+	font-weight: bold;
+	font-style: normal;
+}
+html,
+body {
+	padding: 0;
+	margin: 0;
+	background-color: rgb(85, 85, 85);
+	font-family: "Roboto Mono", "serif_main", -apple-system,
+		BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+		Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	height: 100%;
+	overflow: hidden;
+}
+
+
+::-webkit-scrollbar {
+	width: 10px;
+	height: 7px;
+}
+::-webkit-scrollbar-thumb {
+	background-color: #d6dee1;
+	border-radius: 4px;
+	border: 1px solid transparent;
+	background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover {
+	background-color: #a8bbbf;
+}
+
+h2, h3, h4, h5, h6 {
+	margin: 10px 0 -10px 0;
+	padding-bottom: 0;
+	color: var(--heading-color);
+}
+
+html {
+	font-size: 12px;
+}
+
+h1 { text-align: center; }
+
+/* Font sizes for headings */
+	h2 {font-size: 2.2rem; color: var(--red);}
+	h3 {font-size: 1.6rem;}
+	h4 {font-size: 1.4rem;}
+	h5 {font-size: 1.1rem;}
+	h6 {font-size: 1rem;}
+
+text,
+code {
+	font-family: "Roboto Mono", monospace;
+}
+:not(pre) > code {
+	font-size: 0.85em;
+	white-space: pre;
+}
+
+ol {
+	padding: 0 0 0 2.5em;
+}
+
+ul {
+	padding-left: 1.4em;
+}
+
+li,
+p {
+	font-family: "Fira Code";
+	padding: 3px 0;
+}
+ol {list-style: decimal;}
+ol li ol {list-style: lower-roman;}
+ol li ol li ol {list-style: upper-alpha;}
+ol li ol li ol li ol {list-style: upper-roman;}
+ol li ol li ol li ol li ol {list-style: lower-alpha;}
+
+ul li ul li ul {list-style: disc;}
+
+a {
+	color: inherit;
+	text-decoration: underline;
+	transition: all 0.3s ease;
+}
+a:visited {
+	color: none;
+	outline: 0;
+}
+a:hover {
+	cursor: pointer;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.standard-of-review {
+	color: var(--red);
+}
+
+
+blockquote {
+	margin: 0;
+	font-size: inherit;
+	width: 80%;
+	padding-left: 2%;
+	border-left: solid 2px var(--text-color);
+}
+
+figure {
+	margin: 0;
+	display: flex;
+	flex: 1;
+	justify-content: center;
+}
+
+table {
+	margin: 0 auto;
+	border: solid thin grey;
+	border-collapse: collapse;
+}
+
+table td,
+table th {
+	padding: 5px;
+	border: solid thin grey;
+}
+
+.bubble-pack .leaf-node-label,
+.bubble-pack .branch-node-label {
+	font-size: 1.3rem;
+	fill: var(--red);
+}
+.bubble-pack circle {
+	fill: none;
+	stroke: var(--red);
+	stroke-width: 2px;
+}
+
+.checkbox input {
+	display: none; /* Hide the default checkbox */
+}
+
+/* Style the artificial checkbox */
+.checkbox span {
+	height: 10px;
+	width: 10px;
+	border: 1px solid var(--text-color);
+	display: inline-block;
+	position: relative;
+}
+
+/* Style its checked state...with a ticked icon */
+.checkbox [type="checkbox"]:checked + span:before {
+	content: "\2714";
+	position: absolute;
+	top: -5px;
+	left: 0;
+}
+
+.flowchart polygon {
+	fill: none;
+}
+
+.flowchart .node polygon {
+	stroke: var(--flowchart-stroke-color);
+}
+.flowchart .node text {
+	fill: var(--flowchart-text-color);
+}
+
+.flowchart .edge path,
+.flowchart .edge polygon {
+	stroke: var(--flowchart-stroke-color);
+}
+
+.flowchart .edge polygon {
+	fill: var(--flowchart-stroke-color);
+}
+
+.flowchart text {
+	font-size: 0.7rem;
+	fill: var(--flowchart-stroke-color);
+}
+.graph-edge line {
+	stroke: var(--graph-edge-line-color);
+}
+.graph-node circle {
+	fill: var(--graph-node-fill-color);
+	stroke: var(--graph-node-stroke-color);
+}
+.graph-node-focus-blue circle {
+	fill: var(--graph-node-focus-blue-color);
+	stroke: var(--graph-node-focus-blue-stroke-color);
+}
+.graph text {
+	fill: var(--graph-text-color);
+}
+.graph-node-focus-blue text {
+	fill: var(--graph-node-focus-blue-text-color);
+}
+.float-right {
+	float: right;
+	margin: 5px;
+	width: 35%;
+}
+.state {
+	stroke:var(--hexmap-state-stroke-color);
+}
+.state-c path {fill: var(--red)}
+.state-pc path {fill: var(--teal)}
+.state-mc path {fill: var(--purple);}
+.state-sc path {fill: var(--orange);}
+
+.state-stand-your-ground path {fill: var(--teal)}
+.state-castle-doctrine path {fill: var(--red)}
+.state-stand-your-ground-in-practice path {fill: var(--purple);}
+.state-stand-your-ground-vehicle-only path {fill: var(--orange);}
+.state-grey path {fill: var(--grey);}
+.state-duty-to-retreat path {fill: var(--green);}
+
+
+
+.ftree-node-level-0 circle {fill: rgb(156, 248, 216); stroke: var(--teal)}
+.ftree-node-level-1 circle {fill: rgb(207, 252, 252); stroke: var(--teal);}
+.ftree-edge line {stroke: var(--teal)}

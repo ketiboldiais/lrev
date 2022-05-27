@@ -1,0 +1,93 @@
+{
+	// Place your lrev workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	"UCC": {
+		"scope": "javascript,typescript,markdown",
+		"prefix": "ucc",
+		"body": ["<UCC sect={'$1'} text={'$0'}/>"],
+		"description": "Create a new UCC citation."
+	},
+	"Restatement": {
+		"scope": "javascript,typescript,markdown",
+		"prefix": "restatement",
+		"body": ["<Restatement law={'$1'} sect={'$2'} edition={'$3'} year={'$4'} notes={'$5'}/>"],
+		"description": "Create a new UCC citation."
+	},
+	"Standard of Review": {
+		"scope": "javascript,typescript,markdown",
+		"prefix": "sor",
+		"body": ["<Standard_of_Review/>"],
+		"description": "Create a standard of review indicator."
+	},
+	"USC": {
+		"scope": "javascript,typescript,markdown",
+		"prefix": "usc",
+		"body": ["<USC title={'$1'} section={'$0'}/>"],
+		"description": "Create a standard of review indicator."
+	},
+	"FRCP": {
+		"scope": "javascript,typescript,markdown",
+		"prefix": "frcp",
+		"body": ["<FRCP section={'$0'}/>"],
+		"description": "Create a FRCP citation."
+	},
+	"Red Text": {
+		"scope": "javascript,typescript,markdown",
+		"prefix": "red",
+		"body": ["<Red text={'$0'}/>"],
+		"description": "Create a standard of review indicator."
+	},
+	// Logical connectives
+	"OR": {
+		"scope": "javascript,typescript,markdown",
+		"prefix": "or",
+		"body": ["<OR/>"],
+		"description": "Create a logical-or connective."
+	},
+	"AND": {
+		"scope": "javascript,typescript,markdown",
+		"prefix": "and",
+		"body": ["<AND/>"],
+		"description": "Create a logical-and connective."
+	},
+	"IF": {
+		"scope": "javascript,typescript,markdown",
+		"prefix": "if",
+		"body": ["<IF/>"],
+		"description": "Create a logical-if connective."
+	},
+	"THEN": {
+		"scope": "javascript,typescript,markdown",
+		"prefix": "then",
+		"body": ["<THEN/>"],
+		"description": "Create a logical-then connective."
+	},
+	"UNLESS": {
+		"scope": "javascript,typescript,markdown",
+		"prefix": "unless",
+		"body": ["<UNLESS/>"],
+		"description": "Create a logical-unless connective."
+	},
+	"XOR": {
+		"scope": "javascript,typescript,markdown",
+		"prefix": "xor",
+		"body": ["<XOR/>"],
+		"description": "Create a logical-xor connective."
+	},
+	"IFF": {
+		"scope": "javascript,typescript,markdown",
+		"prefix": "iff",
+		"body": ["<IFF/>"],
+		"description": "Create a logical-iff connective."
+	},
+	"EXCEPT": {
+		"scope": "javascript,typescript,markdown",
+		"prefix": "except",
+		"body": ["<EXCEPT/>"],
+		"description": "Create a logical-except connective."
+	},
+}

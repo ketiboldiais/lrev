@@ -1,0 +1,328 @@
+# Contracts
+
+- [Contracts](#contracts)
+  - [What's a sale?](#whats-a-sale)
+  - [What's a good?](#whats-a-good)
+  - [Contracts Involving Goods and Non-goods](#contracts-involving-goods-and-non-goods)
+  - [Who's a merchant?](#whos-a-merchant)
+  - [Good Faith & Fair Dealing](#good-faith--fair-dealing)
+  - [Types of Contracts](#types-of-contracts)
+    - [Contract Formation Types](#contract-formation-types)
+    - [Contract Acceptance Types](#contract-acceptance-types)
+    - [Contract Validity Types](#contract-validity-types)
+  - [Contract Formation](#contract-formation)
+    - [Mutual Assent](#mutual-assent)
+    - [The Offer](#the-offer)
+      - [Promise, Undertaking, or Commitment](#promise-undertaking-or-commitment)
+        - [Language](#language)
+        - [Surrounding circumstances](#surrounding-circumstances)
+        - [Prior practice and the parties' relationships](#prior-practice-and-the-parties-relationships)
+        - [Communication method](#communication-method)
+        - [Industry Custom](#industry-custom)
+      - [Definite and Certain Terms](#definite-and-certain-terms)
+
+* A contract is a promise or set of promises, where each promise is legally
+  enforceable.
+* **Common Law versus Article 2 Sale of Goods**
+  - Contract disputes are governed by two bodies of law:
+    <BubblePack
+      data={[
+        {val: "", id: "Contract Law", parent: ""},
+        {val: 1, id: "UCC", parent: "Contract Law"},
+        {val: 1, id: "Common Law", parent: "Contract Law"},
+      ]}
+    />
+  - Contracts are usually governed by common law.
+  - Contracts for the **sale of goods** are governed by ~Article 2 of the
+    Uniform Commercial Code (UCC)~.
+  - What happens if the UCC and common law conflict?
+    - If the contract involves the sale of goods, the UCC controls.
+
+## What's a sale?
+
+- A ~sale~ is a contract where the title to a good passes from the seller to the
+  buyer for a price. <UCC sect={'2-106(1)'}/>.
+- This definition implies the following necessary elements:
+  1.  [ ] a contract,
+  2.  [ ] a good,
+  3.  [ ] a seller,
+  4.  [ ] a buyer,
+  5.  [ ] a price,
+  6.  [ ] the seller must have title to the good,
+
+## What's a good?
+
+- A ~good~ is _anything movable_ at the time they're identified as the items to
+  be sold under the contract. <UCC sect={'2-105(1)'}/>.
+- This covers many tangible things: cars, trucks, horses, trailers, etc.
+- **EXCEPTIONS**
+  - The key requirement is _movable_.
+  - This means the UCC does not cover:
+    1.  real estate - land, houses
+    2.  services, or - golf club membership, gym membership, contract for
+        medical or legal services,
+    3.  intangibles, - patents, trademarks, construction contracts, copyrights
+  - Goods associated with real estate _may or may not_ be covered by the UCC.
+    Examples:
+    - minerals, crops, uncut timber, land fixtures.
+
+## Contracts Involving Goods and Non-goods
+
+- Some contracts involve both goods and services.
+  - E.g., a contract repaint a car.
+- For these contracts, the analysis is:
+  <FlowChart
+    data={` step1[label="Determine which aspect\nof the contract dominates."]; step2[label="Apply the law that\ngoverns that aspect\nof the contract."]; step1->step2; `}
+    height={200}
+    width={200}
+    nodeShape="box"
+  />
+- If the contract divides payment between goods and services, then Article 2
+  applies to the sale portion and the common law applies to the services
+  portion.
+
+## Who's a merchant?
+
+- A ~merchant~ is anyone who:
+  1.  [ ] regularly deals in goods of the kind sold, or
+  2.  [ ] through their occupation,
+      - [ ] hold themselves out as having the:
+        - [ ] knowledge or skill
+        - [ ] peculiar to the practices or goods sold
+  - <UCC sect={"2-104(1)"} />
+- Almost anyone in business can deemed a merchant.
+- **EXCEPTIONS**
+  - Some Article 2 provisions require the seller to act in a _mercantile
+    capacity_ (acting within the scope of their business, rather than in a
+    _personal capacity_) to be considered a merchang.
+  - Such provisions include:
+    - Article 2's Implied Warranty of Merchantability
+  - Example:
+    > John sells cars for Junk Corp. On Friday, John buys paper for his office
+    > printer. Later, John offers to sell his Jeep to his friend Ken. Per
+    > Article 2, John is a merchant with respect to the paper purchase, but not
+    > with respect to his care sale.
+
+## Good Faith & Fair Dealing
+
+- Suppose A and B enter into a contract.
+- Under the common law and UCC:
+  - Both A and B have an obligation to:
+    1.  perform their promises in good faith, and
+    2.  enforce the contract in good faith.
+  - Good faith — under the UCC — is defined as:
+    - honesty in fact and observance of reasonable commercial standards.
+      <UCC sect={"1-201(20)"} />.
+  - Good faith under common law depends on the jurisdiction.
+- Common way to violate this duty:
+  - One party, through their discretion, deprives the other party of the
+    contract's benefits.
+- <Standard_of_Review/>: Whether a party violates their duty of good faith and
+  fair dealing is a ~question of fact~.
+
+## Types of Contracts
+
+- Contracts can be divided into different types, depending on their attributes.
+
+### Contract Formation Types
+
+- There are several types of contracts in terms of _how they're formed_.
+  <FlowChart
+    data={` ranksep=1.5; nodesep=1.0; a[label="Contract\nFormation\nTypes"]; b[label="Express\nContracts"]; c[label="Implied\nContracts"]; d[label="Quasi-contracts"]; a--b; a--c; a--d; `}
+    type="graph"
+    width={320}
+    height={320}
+    engine="twopi"
+    nodeShape="plain"
+  />
+- ~Express Contracts~
+  - Contracts formed by _language_, oral or written.
+- ~Implied Contracts~
+  - Contracts implied by the circumstances/facts — one party indicates assent
+    through their _conduct_.
+  - E.g., If ${A}$ goes to the barber and lets ${B}$ cut their hair without
+    ${A}$ saying no or resisting, an _implied contract_ forms between ${A}$ and
+    ${B.}$
+- ~Quasi-contracts~
+  - Quasi-contracts are **not** contracts.
+  - They're orders made by a court to avoid ~unjust enrichment~ by permitting
+    the plaintiff to bring an action in restitution to recover the amount of
+    benefit the defendant receives.[^quasi-contract-note].
+
+[^quasi-contract-note]:
+    The quasi-contract's relationship to contracts is purely historical.
+
+### Contract Acceptance Types
+
+- Contract types also differ in terms of _how acceptance is made_.
+  <FlowChart
+    data={` a[label="Contract Formation Types"]; b[label="Bilateral\nContracts"]; c[label="Unilateral\nContracts"]; a--b; a--c; `}
+    type="graph"
+    width={200}
+    height={200}
+    nodeShape="plain"
+  />
+- ~Bilateral Contracts~
+  - These are contracts where a promise is exchange for a promise.
+  - Example:
+    > ${A}$ buys ${x}$ from ${B.}$ In this case, ${A}$ promises to buy ${x}$
+    > from ${B,}$ and ${B}$ promises to sell ${x}$ to ${A.}$
+- ~Unilateral Contracts~
+  - These are contracts where the offeror request ~performance~ rather than a
+    promise.
+  - One party is the _promisor_ (or _offeror_) and the other is the _promisee_
+    (_offeree_).
+  - The offeror promises to pay ${x}$ once the offeree has completed the
+    offeror's request.
+  - Example:
+    > ${A}$ promises to pay ${B}$ \$20,000 once ${B}$ ships their merchandise.
+    > ${B}$ is not obligated to actually ship the merchandies (since, if they
+    > fail to do so, they won't get paid). But if ${B}$ does complete shipping,
+    > ${A}$ is obligated to pay ${B.}$
+  - Most contracts are unilateral contracts.
+  - Under the Restatement Second of Contracts, and UCC Article 2, all contracts
+    are _indifferent offers_ — they can be accepted by making a promise or
+    beginning performance.
+  - <Red text={"Requirements for Formation"} /> Under Article 2 of the UCC where
+    a unilateral contract is formed:
+  1.  Condition 1
+      - [ ] the offeror clearly (unambiguously) indicates that
+      - [ ] completion is the only form of acceptance,
+  2.  Condition 2
+      - [ ] the offer is to the public (e.g., a reward), and
+      - [ ] the offer clearly contemplates acceptance
+
+### Contract Validity Types
+
+- Contract types are also divided according to their **validity**.
+  <FlowChart
+    data={` ranksep=1; a[label="Contract Validity Types"]; b[label="Void\nContracts"]; c[label="Voidable\nContracts"]; d[label="Unenforceable\nContracts"]; a--b; a--c; a--d; `}
+    type="graph"
+    width={310}
+    height={310}
+  />
+- ~Void Contracts~
+  - A void contract is a contract _without any legal effect_ from the very
+    beginning.
+  - Void contracts cannot be enforced by either party.
+  - Examples: Contracts made to commit a crime.
+- ~Voidable contracts~
+  - These are contracts where the parties can _elect to avoid the contract_.
+  - Example: Avoiding a contract because of infancy or mental illness.
+- ~Unenforceable Contracts~
+  - Contracts that are valid, but cannot be enforced.
+  - Unenforceability can result from:
+    - expiration of the right to enforce because of a contract provision,
+    - the statute of frauds prevents enforcement, or
+    - public policy prevents enforcement.
+
+## Contract Formation
+
+- If a party files suit under contract, the court must first determine if there
+  was a contract in the first place.
+- The analysis:
+  <FlowChart
+    data={` a[label="Was there mutual assent?"]; a1[label="Yes"] a2[label="No"] b[label="Was there consideration?"]; b1[label="Yes"] b2[label="No"] c[label="Are there any\ndefenses to creation\nof the contract?"]; c1[label="Yes"] c2[label="No"] d[label="Dismiss for failure\nto state a claim."] e[label="No formation issues"] f[label="Analyze defenses"] a->a1->b; a->a2->d; b->b1->c b->b2->d c->c2->e c->c1->f`}
+    nodeShape="box"
+    width={470}
+    height={470}
+  />
+
+### Mutual Assent
+
+- _Mutual assent_ occurs when the parties reach the "same bargain at the same
+  time."
+- Common way mutual assent occurs: The parties negotiate, and at some point, one
+  party makes a proposal (an _offer_) and the other agrees to it (an
+  _acceptance_).
+- Courts use an **objective measure** - each party is bound to the **apparent
+  intention** they manifested to the other.
+
+### The Offer
+
+- An offer is made through a communication by one party to another.
+- For a communication to be an offer it must:
+  - [ ] create a **reasonable expectation**
+  - [ ] in the offeree
+  - [ ] that the offeror is willing
+  - [ ] to enter into a contract
+  - [ ] on the offered terms
+- The analysis:
+  <FlowChart
+    data={` a[label="Did the offeror\ncommunicate a promise,\nundertaking, or commitment\nto enter a contract?"]; a1[label="yes"]; a2[label="no"]; b[label="Did the offeror make\nthat communication to\nthe offeree?"]; b1[label="yes"]; b2[label="no"]; c[label="Were the essential\nterms certain\nand definite?"]; c1[label="yes"]; c2[label="no"]; d[label="No offer was made"]; e[label="No mutual assent"]; f[label="No offer issues"] a->a1->b; a->a2->d; b->b1->c; b->b2->d; c->c1->f; c->c2->d; d->e; `}
+    width={600}
+    height={600}
+    nodeShape="box"
+  />
+
+#### Promise, Undertaking, or Commitment
+
+- For a communication to be an offer, the offeror must have communicated to the
+  offeree one of the following:
+  - [ ] a promise,
+  - [ ] an undertaking,
+  - [ ] an undertaking, or
+  - [ ] a commitment
+- An invitation to begin preliminary negotiations, doesn't count.
+- The offeror must communicate an _intent_ to enter a contract.
+- To determine if the offeror had intent, courts consider the following factors.
+
+##### Language
+
+- Language such as "I offer" or "I promise" are not necessary, but they are
+  indicative of intent.
+- Language with certainty — "I'm asking $400,000 for" may or may not indicate
+  intent. Parties can argue that it was just a _feeler_.
+
+##### Surrounding circumstances
+
+- Context matters.
+- Communications made as a joke, out of anger, or just to brag are unlikely to
+  indicate an offer.
+- Pushback: Even if the offeror intended it as a joke, if it could be reasonably
+  understood as a serious offer, courts can find a valid offer.
+
+##### Prior practice and the parties' relationships
+
+- Offers are more likely to be found if the offeror and the offeree have a
+  history of making contracts with one another.
+
+##### Communication method
+
+- The way an offer is communicated can impact whether a communication is a valid
+  offer.
+- ~Broad Communications Media~
+  - The broader the communicating media (e.g., disseminating the offer through
+    the public), the more more likely the communication is just a **solication
+    of an offer**.
+- ~Advertisements~
+  - TV ads, catalogs, newspaper ads, etc., containing price quotes are usually
+    interpreted as _invitations for offers_ rather than actual offers.
+  - Why not? Public policy. If we construed these as offers, we'd run into the
+    problem of _overacceptance_ — too many people accepting the offer.
+  - But, if the ad contains a definitive language, it can be considered an
+    offer.
+
+##### Industry Custom
+
+- Courts can consider industry custom in determining if a communication counts
+  as an offer.
+
+#### Definite and Certain Terms
+
+- An offer must be made in _definite_ and _certain_ terms.
+- The analysis:
+
+<FlowChart data={`
+	a[label="Put all of the terms\ncommunicated in the offer\n in a document."];
+	b[label="Can the document be enforced?"];
+	b1[label="yes"];
+	b2[label="no"];
+	c[label="No definite\nand certain terms"];
+	d[label="No definiteness\nand certainty issues."];
+
+    a->b;
+    b->b1->d;
+    b->b2->c;
+
+`} nodeShape="box" width={350} height={350}/>

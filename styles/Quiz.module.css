@@ -1,0 +1,60 @@
+
+.question {
+	font-size: 0.95rem;
+	border-top: solid thin lightblue;
+	border-bottom: solid thin lightblue;
+	padding: 0.3em 1em 0.3em 0.5em;
+	width: 100%;
+	height: fit-content;
+}
+.questionContent {
+	visibility: hidden;
+	opacity: 0;
+	max-height: 0;
+	transition: all 0.15s ease-out;
+}
+.showQuestionContent {
+	visibility: visible;
+	opacity: 1;
+	max-height: 100%;
+	transition: all 0.25s ease-in;
+}
+.question>p {
+	color: var(--heading-color);
+}
+.question p {
+	margin: 0;
+	padding: 0;
+}
+.question p:hover {
+	cursor: pointer;
+}
+.question li {
+	margin: 0;
+	padding: 0;
+}
+.questionPrompt ul {
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 0.5em;
+}
+.hideAnswers ul {
+	visibility: hidden;
+	opacity: 0;
+	max-height: 0;
+	transition: all 0.15s ease-out;
+}
+.revealAnswers ul {
+	visibility: visible;
+	opacity: 1;
+	max-height: 100%;
+	transition: all 0.25s ease-in;
+}
+.answerButton {
+	font-family: "Fira Code";
+	font-size: 0.95rem;
+	border: none;
+}
+.answerButton:hover {
+	cursor: pointer;
+}

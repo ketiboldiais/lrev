@@ -1,0 +1,68 @@
+.dark {
+	--background-color: rgb(43, 43, 43);
+	--page-title-color: rgb(255, 255, 255);
+	--nav-background-color: rgb(153, 0, 0);
+	--nav-text-color: white;
+	--text-color: rgb(230, 230, 230);
+	--doubly-linked-list-rect-fill: rgb(136, 207, 207);
+	--doubly-linked-list-focus-rect-fill: rgb(246, 177, 165);
+	--hover-background-color: teal;
+	--border-bottom: solid thin cyan;
+	--box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.8);
+	--heading-color: rgb(76, 255, 219);
+	--flowchart-stroke-color: gold;
+	--flowchart-text-color: teal;
+	--link-hover-background-color: black;
+	--link-hover-text-color: white;
+
+	--page-title-color: rgba(11, 11, 11, 0.6);
+	--page-title-shadow: 2px 2px 3px rgba(211, 211, 211, 0.091);
+	
+	--graph-edge-line-color: rgb(134, 114, 0);
+	--graph-text-color: gold;
+	--graph-node-fill-color: rgb(255, 97, 69);
+	--graph-node-stroke-color:rgb(196, 0, 0);
+	--graph-node-focus-blue-color: rgb(94, 230, 200);
+	--graph-node-focus-blue-stroke-color: rgb(0, 92, 149);
+	--graph-node-focus-blue-text-color: cyan;
+	--hexmap-state-stroke-color: cyan;
+
+	/* Named colors */
+	--red: tomato;
+	--green: lime;
+	--teal: teal;
+	--purple: purple;
+	--orange: orange;
+}
+
+.light {
+	--background-color: rgb(255, 255, 255);
+	--page-title-color: rgb(227, 227, 227);
+	--nav-background-color: #dee4e7;
+	--nav-text-color: #37474f;
+	--text-color: #393E46;
+	--doubly-linked-list-rect-fill: rgb(136, 207, 207);
+	--doubly-linked-list-focus-rect-fill: rgb(246, 177, 165);
+	--hover-background-color: teal;
+	--border-bottom: solid thin cyan;
+	--box-shadow: 0px 2px 5px 2px rgba(80, 80, 80, 0.346);
+	--heading-color: #487298;
+	--flowchart-stroke-color: #487298;
+	--flowchart-text-color: #487298;
+	--link-hover-background-color: black;
+	--link-hover-text-color: white;
+	--page-title-color: rgb(69, 69, 69);
+	--graph-edge-line-color: rgb(0, 196, 193);
+	--graph-text-color: rgb(104, 104, 104);
+	--graph-node-fill-color: rgb(255, 143, 123);
+	--graph-node-stroke-color:rgb(196, 0, 0);
+	--graph-node-focus-blue-color: rgb(94, 230, 200);
+	--graph-node-focus-blue-stroke-color: rgb(0, 92, 149);
+	--graph-node-focus-blue-text-color: rgb(0, 167, 167);
+	--hexmap-state-stroke-color: rgb(255, 255, 255);
+	--red: #bf0000;
+	--green: lime;
+	--teal: rgb(107, 193, 193);
+	--purple: rgb(171, 90, 171);
+	--orange: orange;
+}

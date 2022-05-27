@@ -1,0 +1,17 @@
+.titleContainer {
+	margin: 2.5em 0 6em 0;
+	padding: 0;
+}
+
+.titleText {
+	font-size: 3rem;
+	color: var(--page-title-color);
+  /* text-shadow: var(--page-title-shadow); */
+}
+
+.divider {
+	width: 50px;
+	height: 2px;
+	margin: 20px auto;
+	background-color: rgb(182, 182, 182);
+}

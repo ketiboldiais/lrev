@@ -1,0 +1,10 @@
+{
+	"editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[mdx]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"markdownFormatter.enable": false
+}

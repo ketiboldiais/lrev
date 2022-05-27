@@ -1,0 +1,15 @@
+.questionContainer {
+	border-top: solid thin var(--red);
+	border-bottom: solid thin var(--red);
+	color: var(--red);
+	width: 30%;
+	float: right;
+	margin-left: 10px;
+}
+.questionContainer > ul {
+	list-style: none;
+	padding-left: 0.2em
+}
+.questionContainer > ul li ul {
+	padding-left: 2em;
+}
