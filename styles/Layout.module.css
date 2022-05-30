@@ -2,26 +2,32 @@
 	display: flex;
 	justify-content: center;
 	position: fixed;
-	height: 98vh;
-	margin: 10px;
+	margin: 0;
 }
 .container {
-	padding: 0 1.2em 25em 1.2em;
 	background-color: var(--background-color);
 	color: var(--text-color);
-	overflow-y: scroll;
-	margin-top: 7vh;
-	width: 95%;
-	height: 90%;
 	scroll-behavior: smooth;
+	height: 100vh;
 	overflow-x: hidden;
+	overflow-y: hidden;
+}
+.main {
+	padding: 1.8em 1.8em 25em 1.8em;
+	height: 92%;
+	margin: 20px;
+	margin-top: 50px;
+	overflow-y: scroll;
+	background-color: var(--page-color);
 	box-shadow: var(--box-shadow);
 }
 .titleBar {
 	display: flex;
 	justify-content: space-between;
 	position: fixed;
-	background-color: var(--background-color);
+	padding: 2px;
+	background-color: var(--title-bar-color);
+	/* box-shadow: var(--box-shadow); */
 	font-size: 1rem;
 	width: 100%;
 	left: 0;
@@ -30,11 +36,12 @@
 }
 .titleBar button {
 	border: none;
-	color: var(--text-color);
+	color: var(--title-bar-text-color);
 	font-family: inherit;
 	background-color: inherit;
-	border-bottom: solid 2px var(--text-color);
+	border-bottom: solid 2px var(--title-bar-text-color);
 	padding: 0.4em;
+	margin-left: 5px;
 	cursor: pointer;
 }
 .titleBar a {

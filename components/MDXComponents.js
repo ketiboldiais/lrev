@@ -37,6 +37,7 @@ import THEN from "./citator/Connectives/THEN";
 import UCC from "./citator/UCC";
 import USC from "./citator/USC";
 import Term from "./Term";
+import Float from "./Float/Float";
 
 import Header from "./Header";
 const MDXComponents = {
@@ -54,6 +55,7 @@ const MDXComponents = {
       <figcaption className={ImgStyles.figcaption}>{props.alt}</figcaption>
     </div>
   ),
+  Float,
   OR,
   AND,
   UNLESS,

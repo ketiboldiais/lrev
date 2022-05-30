@@ -43,7 +43,7 @@ const Routes = [
 	// { name: "Professional Responsibility", path: `${pr}`, children: [] },
 	// { name: "Statutory Interpretation", path: `${sl}`, children: [] },
 	{ name: "Criminal Law", path: `${crimLaw}main`, children: [] },
-	// { name: "Criminal Procedure", path: `${cp}main`, children: [] },
+	{ name: "Criminal Procedure", path: `${cp}main`, children: [] },
 	// { name: "Evidence", path: `${ev}`, children: [] },
 	// { name: "California Evidence", path: `${cev}`, children: [] },
 	// { name: "Real Property", path: `${rp}`, children: [] },

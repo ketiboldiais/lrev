@@ -1,6 +1,9 @@
 .light {
-	--background-color: rgb(255, 255, 255);
-	--page-title-color: rgb(227, 227, 227);
+	--background-color: rgb(246, 255, 255);
+	--page-color: rgb(255, 255, 255);
+	--title-bar-color: rgb(246, 255, 255);
+	--title-bar-text-color: rgb(101, 128, 172);
+	--h2-color: firebrick;
 	--nav-background-color: #dee4e7;
 	--nav-text-color: #37474f;
 	--text-color: #393E46;
@@ -8,7 +11,7 @@
 	--doubly-linked-list-focus-rect-fill: rgb(246, 177, 165);
 	--hover-background-color: teal;
 	--border-bottom: solid thin cyan;
-	--box-shadow: 2px 4px 6px 2px rgba(34, 34, 34, 0.721);
+	--box-shadow: 1px 4px 10px 4px rgba(34, 34, 34, 0.339);
 	--heading-color: #487298;
 	--flowchart-stroke-color: #487298;
 	--flowchart-text-color: #487298;
@@ -28,31 +31,33 @@
 	--red: #bf0000;
 	--green: lime;
 	--teal: rgb(107, 193, 193);
+	--blue: #316b83;
 	--purple: rgb(171, 90, 171);
 	--orange: orange;
 	--grey: grey;
 }
 
 .dark {
-	--background-color: rgb(43, 43, 43);
-	--page-title-color: rgb(255, 255, 255);
-	--nav-background-color: rgb(153, 0, 0);
-	--nav-text-color: white;
+	--background-color: rgb(38, 42, 73);
+	--page-color: rgb(38, 42, 73);
+	--title-bar-color: rgb(38, 42, 73);
+	--title-bar-text-color: rgb(180, 163, 236);
+	--page-title-color: #866cce;
+	--h2-color: #c282ff;
+	--nav-background-color: rgb(45, 0, 135);
+	--nav-text-color: rgb(214, 214, 214);
 	--text-color: rgb(230, 230, 230);
 	--doubly-linked-list-rect-fill: rgb(136, 207, 207);
 	--doubly-linked-list-focus-rect-fill: rgb(246, 177, 165);
 	--hover-background-color: teal;
 	--border-bottom: solid thin cyan;
 	--box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.8);
-	--heading-color: rgb(76, 255, 219);
+	--heading-color: rgb(244, 198, 64);
 	--flowchart-stroke-color: gold;
 	--flowchart-text-color: teal;
 	--link-hover-background-color: black;
 	--link-hover-text-color: white;
 
-	--page-title-color: rgba(11, 11, 11, 0.6);
-	--page-title-shadow: 2px 2px 3px rgba(211, 211, 211, 0.091);
-	
 	--graph-edge-line-color: rgb(134, 114, 0);
 	--graph-text-color: gold;
 	--graph-node-fill-color: rgb(255, 97, 69);
@@ -63,9 +68,10 @@
 	--hexmap-state-stroke-color: cyan;
 
 	/* Named colors */
-	--red: rgb(241, 37, 37);
+	--red: rgb(255, 70, 70);
 	--green: rgb(19, 110, 19);
 	--teal: teal;
+	--blue: rgb(172,249,250);
 	--purple: purple;
 	--orange: orange;
 	--grey: grey;
@@ -128,14 +134,16 @@ h2, h3, h4, h5, h6 {
 	color: var(--heading-color);
 }
 
-html {
-	font-size: 12px;
+html {font-size: 12px}
+
+body {
+	font-size: clamp(0.8rem, 1rem, 1.1rem);
 }
 
 h1 { text-align: center; }
 
 /* Font sizes for headings */
-	h2 {font-size: 2.2rem; color: var(--red);}
+	h2 {font-size: 1.8rem; color: var(--h2-color)}
 	h3 {font-size: 1.6rem;}
 	h4 {font-size: 1.4rem;}
 	h5 {font-size: 1.1rem;}
@@ -161,18 +169,18 @@ ul {
 li,
 p {
 	font-family: "Fira Code";
-	padding: 3px 0;
+	padding: 2px 0;
 }
+li p {padding: 0; margin: 0}
 ol {list-style: decimal;}
 ol li ol {list-style: lower-roman;}
 ol li ol li ol {list-style: upper-alpha;}
 ol li ol li ol li ol {list-style: upper-roman;}
 ol li ol li ol li ol li ol {list-style: lower-alpha;}
-
 ul li ul li ul {list-style: disc;}
 
 a {
-	color: inherit;
+	color: var(--blue);
 	text-decoration: underline;
 	transition: all 0.3s ease;
 }
@@ -313,7 +321,19 @@ table th {
 .state-grey path {fill: var(--grey);}
 .state-duty-to-retreat path {fill: var(--green);}
 
-
+.htree-node-text {
+	fill: var(--blue);
+}
+.htree-edge {
+	stroke: var(--blue);
+}
+#htree-arrow {
+	fill: var(--blue);
+}
+.htree-node circle {
+	stroke: var(--blue);
+	fill: rgb(245, 255, 255);
+}
 
 .ftree-node-level-0 circle {fill: rgb(156, 248, 216); stroke: var(--teal)}
 .ftree-node-level-1 circle {fill: rgb(207, 252, 252); stroke: var(--teal);}

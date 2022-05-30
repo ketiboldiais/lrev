@@ -6,7 +6,6 @@
 .titleText {
 	font-size: 3rem;
 	color: var(--page-title-color);
-  /* text-shadow: var(--page-title-shadow); */
 }
 
 .divider {

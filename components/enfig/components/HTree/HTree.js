@@ -15,6 +15,7 @@ export const HTree = ({
 	containerWidth = 70,
 	containerHeight = 70,
 	margins = [70, 70, 70, 70],
+	fontsize=1.1,
 	isDirected = true,
 	sibSpace = 1,
 	nSibSpace = 2,
@@ -23,7 +24,6 @@ export const HTree = ({
 	nodeFillColor = "",
 	nodeTextColor = "",
 	nodeStrokeColor = "",
-	nodeTextFontSize = "",
 	edgeColor = "",
 	edgeThickness = "1",
 	hideNodeCircles = false,
@@ -106,7 +106,7 @@ export const HTree = ({
 				else return "2em";
 			},
 			fill: nodeTextColor,
-			"font-size": nodeTextFontSize,
+			"font-size": `${fontsize}rem`,
 			x: (d) => (d.children ? -5 : 5),
 			"text-anchor": (d) => {
 				if (d.data.anchor) return d.data.anchor;

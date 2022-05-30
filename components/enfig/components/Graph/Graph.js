@@ -18,6 +18,7 @@ export const Graph = ({
   collisionRadius = 10,
   margins = [50, 50, 50, 50],
   nodeRadius = 5,
+  radialRadius = nodeRadius * 8,
   nodeTextOffsetY = -11,
   nodeTextOffsetX = 0,
   edgeColor = "",
@@ -68,26 +69,34 @@ export const Graph = ({
       .data(nodes)
       .enter()
       .append("g")
-      .attr("class", d => d.focus ? `graph-node-focus-${d.focus}` : `graph-node`);
+      .attr("class", (d) => (d.focus ? `graph-node-focus-${d.focus}` : `graph-node`));
 
     const nodeCircles = nodeEnter
       .append("circle")
-      .attr('class', 'graph-node-circle')
-      .attr("r", (d) => d.r ? d.r : nodeRadius)
-      .attr('stroke', (d) => d.stroke ? d.stroke :  nodeStrokeColor)
-      .attr('stroke-width', (d) => d.strokeWidth ? d.strokeWidth : nodeStrokeWidth)
-      .attr('fill', (d) => d.fill ? d.fill : nodeFillColor)
+      .attr("class", "graph-node-circle")
+      .attr("r", (d) => (d.r ? d.r : nodeRadius))
+      .attr("stroke", (d) => (d.stroke ? d.stroke : nodeStrokeColor))
+      .attr("stroke-width", (d) => (d.strokeWidth ? d.strokeWidth : nodeStrokeWidth))
+      .attr("fill", (d) => (d.fill ? d.fill : nodeFillColor));
 
-    const nodeText = nodeEnter
-      .append("text")
-      .text((d) => d.id);
+    const radial = nodeEnter
+      .filter((d) => d.radial)
+      .append("circle")
+      .attr("class", "graph-node-radial-circle")
+      .attr("r", (d) => (typeof d.radial === "number" ? d.radial : radialRadius))
+      .attr("fill", (d) => (d.fill ? d.fill : nodeFillColor))
+      .attr("fill-opacity", 0.2)
+      .attr('stroke-width', 1)
+      .attr('stroke-opacity', 0.2)
+
+    const nodeText = nodeEnter.append("text").text((d) => d.id);
 
     attrs(nodeText, {
       class: "graph-node-text",
       "text-anchor": "middle",
       fill: nodeTextColor,
-      dy: d => d.dy ? d.dy : nodeTextOffsetY,
-      dx: d => d.dx ? d.dy : nodeTextOffsetX,
+      dy: (d) => (d.dy ? d.dy : nodeTextOffsetY),
+      dx: (d) => (d.dx ? d.dy : nodeTextOffsetX),
       "font-size": nodeTextFontSize,
     });
 
