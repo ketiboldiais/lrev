@@ -1,9 +1,7 @@
 import React from "react";
 import {useState, useEffect} from "react";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import styles from "../styles/Layout.module.css";
 import Nav from "./Nav";
-import {faMoon, faSun} from "@fortawesome/free-solid-svg-icons";
 
 const Layout = ({children}) => {
   const [theme, setTheme] = useState("");
@@ -23,16 +21,10 @@ const Layout = ({children}) => {
     <div className={`${styles.mainContent} ${theme}`}>
       <div className={styles.titleBar}>
         <Nav />
-        <div>
-          <input type="checkbox" className={styles.themeCheck} id="themeToggle" />
-          <label
-            htmlFor="themeToggle"
-            className={styles.themeToggler}
-            onClick={switchTheme}
-            theme={theme}>
-            <FontAwesomeIcon icon={faMoon} className={styles.faMoon} />
-            <FontAwesomeIcon icon={faSun} className={styles.faSun} />
-            <div className={styles.toggleBall}></div>
+        <div className={styles.toggleWrapper}>
+          <input type="checkbox" className="dn" id="dn" />
+          <label htmlFor="dn" className={styles.toggle} onClick={switchTheme} theme={theme}>
+            <span className={styles.toggleHandler}></span>
           </label>
         </div>
       </div>

@@ -6,7 +6,6 @@ import {Network} from "./enfig/components/Network/network";
 import {FTree} from "./enfig/components/FTree/FTree";
 import ImgStyles from "../styles/image.module.css";
 import Standard_of_Review from "./Standard_of_Review";
-import PageTitle from "./PageTitle";
 import Restatement from "./citator/Restatement/Restatement";
 import Box from "./Box";
 import Checkbox from "./Checkbox";
@@ -38,6 +37,7 @@ import UCC from "./citator/UCC";
 import USC from "./citator/USC";
 import Term from "./Term";
 import Float from "./Float/Float";
+import { Case } from "./citator/Case/Case";
 
 import Header from "./Header";
 const MDXComponents = {
@@ -56,6 +56,7 @@ const MDXComponents = {
     </div>
   ),
   Float,
+  Case,
   OR,
   AND,
   UNLESS,
@@ -73,7 +74,6 @@ const MDXComponents = {
   Red,
   UCC: (props) => <UCC {...props} />,
   Box: (props) => <Box {...props} />,
-  h1: (props) => <PageTitle text={props.children} />,
   FlowChart,
   Standard_of_Review,
   del: (props) => <Term text={props.children} />,

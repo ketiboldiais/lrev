@@ -9,3 +9,60 @@
 .connective {
 	display: inline-block;
 }
+.caseName {
+	font-style: italic;
+}
+
+.caseHasBrief {
+	text-decoration: underline;
+}
+
+.caseBriefContent h1 {
+	font-size: 1.1rem;
+	text-align: left;
+	margin: 0.5em 0 0 0;
+	padding: 0;
+}
+
+.caseHasBrief:hover {
+	cursor: pointer;
+}
+
+.caseBrief {
+	position: relative;
+	display: inline-block;
+}
+
+.caseBriefContent {
+	box-shadow: var(--box-shadow);
+	background-color: var(--tooltip-color);
+	padding: 1em 1.5em;
+	margin: 0;
+	position: absolute;
+	z-index: 10;
+}
+
+.caseBriefContent:after {
+	content: " ";
+	position: absolute;
+	bottom: 100%;
+	left: 5%;
+	margin-left: -10px;
+	border-width: 10px;
+	border-style: solid;
+	border-color: transparent transparent var(--tooltip-color) transparent;
+}
+
+
+.caseBriefNotVisible {
+	width: 0%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}
+.caseBriefVisible {
+	width: 100%;
+	visibility: visible;
+	opacity: 1;
+	transition: opacity 0.5s ease;
+}

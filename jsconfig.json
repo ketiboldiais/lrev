@@ -2,8 +2,8 @@
 	"compilerOptions": {
 		"baseUrl": ".",
 		"paths": {
-			"contentlayer/generated": ["./.contentlayer/generated"]
-			// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+			"contentlayer/generated": ["./.contentlayer/generated"],
+			"@CasesCrimPro/*": ["pages/cases/criminal_procedure/*"],
 		}
 	},
 	"include": [

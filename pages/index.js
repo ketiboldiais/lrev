@@ -13,8 +13,8 @@ export default function Home() {
         various courses I&rsquo;ve taken in law school, as well as independent
         readings I had to do as an articles editor for Law Review. I expect most
         of this site&rsquo;s readers to be law school students or other legal
-        professionals (e.g., I assume readers are familiar with terms like
-        <i>prayer for relief</i> or <i>motion in limine</i>). That said,
+        professionals (e.g., I assume readers are familiar with terms like{" "}
+        <i>prayer for relief</i> or <i>motion in limine</i>). That said,{" "}
         <u>please read the disclaimer below before proceeding.</u>
       </p>
       <h2>
@@ -26,12 +26,12 @@ export default function Home() {
         <li>
           All of the information on this website is provided for educational
           purposes only, and should not be construed as legal advice or as an
-          offer to perform legal services on any subject matter .
+          offer to perform legal services on any subject matter.
         </li>
         <li>
           No recipients of content from this site, clients or otherwise, should
-          act or refrain from acting on the basis of this website&rsquo;s content
-          without seeking a licensed attorney&rsquo;s services.
+          act or refrain from acting on the basis of this website&rsquo;s
+          content without seeking a licensed attorney&rsquo;s services.
         </li>
         <li>
           The author makes no warranty, expressed or implied, about the accuracy
@@ -61,11 +61,12 @@ export default function Home() {
         </li>
         <li>
           The author expressly disclaims all liability with respect to actions
-          taken or not taken based on any or all of this website&rsquo;s contents.
+          taken or not taken based on any or all of this website&rsquo;s
+          contents.
         </li>
         <li>
           If you need legal assistance, contact a licensed attorney in your
-          state.
+          jurisdiction.
         </li>
       </ol>
     </div>
