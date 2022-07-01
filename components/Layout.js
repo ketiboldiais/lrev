@@ -22,10 +22,13 @@ const Layout = ({children}) => {
       <div className={styles.titleBar}>
         <Nav />
         <div className={styles.toggleWrapper}>
-          <input type="checkbox" className="dn" id="dn" />
-          <label htmlFor="dn" className={styles.toggle} onClick={switchTheme} theme={theme}>
-            <span className={styles.toggleHandler}></span>
-          </label>
+          <button onClick={switchTheme}>
+            {theme === "light" ? "light mode" : "dark mode"}
+          </button>
+          {/* <input type="checkbox" className="dn" id="dn" onClick={switchTheme} />
+          <label htmlFor="dn" className={styles.toggle} theme={theme}>
+            <span className={styles.toggleHandler}>dark mode</span>
+          </label> */}
         </div>
       </div>
       <div className={styles.container}>

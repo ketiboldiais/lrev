@@ -14,11 +14,32 @@ export default function Home() {
         readings I had to do as an articles editor for Law Review. I expect most
         of this site&rsquo;s readers to be law school students or other legal
         professionals (e.g., I assume readers are familiar with terms like{" "}
-        <i>prayer for relief</i> or <i>motion in limine</i>). That said,{" "}
-        <u>please read the disclaimer below before proceeding.</u>
+        <i>prayer for relief</i> or <i>motion in limine</i>).
       </p>
-      <h2>
-        <b style={{color: "firebrick"}}>
+      <p>
+        I put this site together as both a personal reference for legal research
+        and a general repository of my law school outlines. In law school,
+        outlines were valuable—even those bordering on gibberish—and I still
+        find myself referring back to them. Much like software development,
+        there are few things worse than being confronted by a problem with
+        little to no documentation. Where do we even start?
+      </p>
+      <p>
+        Moreover, as a strong believer in open source, I think those who want to
+        know more about the law ought to have open access to educational
+        resources. The law should be transparent.
+      </p>
+      <p>
+        That said, the legal profession is unique, and there are rules of
+        professional responsibility. Those rules are there for a reason, and I
+        take them seriously. As such, I am putting design and presentation by
+        the wayside to ensure this notice is clear:
+      </p>
+      <p style={{fontSize: "2.5rem", textAlign: "center"}}>
+        <u>Read the disclaimer below before proceeding</u>
+      </p>
+      <h2 style={{textAlign: "center"}}>
+        <b>
           <u>DISCLAIMER</u>
         </b>
       </h2>

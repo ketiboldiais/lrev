@@ -1,0 +1,95 @@
+<FlowChart data={`
+
+{ rank=same;
+detection[label="crime detected"];
+report[label="crime reported"];
+arraignment[label="arraignment"];
+}
+appeal[label="appeal"];
+trial[label="trial"];
+habeas[label="Habeas petition"];
+{ rank=same;
+convict[label="convict"];
+acquit[label="acquit"];
+}
+firstInvestigation[label="police investigate"];
+{ rank=same;
+pursue1[label="pursue"];
+booking[label="suspected\nbooked\ninto jail"];
+interrogation[label="interrogation"];
+}
+policeDecision1[label="Decision: Pursue or drop"];
+chargeOrDrop[label="Prosecutor decision:\ncharge or release"]
+pursueAfterInterrogation[label="pursue"];
+dropOrRefer[label="Police decision:\nRefer to\nprosector or drop"];
+arrest[label="arrest"];
+custody[label="custody"];
+refer[label="refer"];
+charge[label="charge"];
+indictment[label="indictment issued"];
+{ rank=same;
+preliminaryHearing[label="preliminary hearing"];
+release[label="release"];
+}
+bail[label="bail"];
+pleaBargaining[label="plea bargaining"];
+discovery[label="discovery"];
+settlement[label="settlement"];
+{rank=same
+felony[label="felonies"];
+nonfelony[label="non-felonies"];
+}
+grandJury[label="prosecutor presents\ncase to grand jury"];
+complaint[label="prosecutor files\ncomplaint with judge"];
+arraignmentDismissal[label="Judge dismisses"];
+{rank=same;
+arraignmentProceed[label="Judge does not dismiss"];
+sentencing[label="sentencing"];
+}
+grandJuryFindsProbableCause[label="Grand jury finds\nprobable cause"];
+grandJuryNoProbableCause[label="Grand jury does\nnot find\nprobable cause"];
+grandJuryDismissed[label="Case dismissed"];
+convictionUpheld[label="Conviction upheld"];
+retrial[label="Order for re-trial"];
+habeasDenied[label="Habeas petition denied"];
+habeasGranted[label="Habeas petition granted"];
+vacatur[label="Conviction vacated"];
+cert[label="Petition SCOTUS"];
+
+report->firstInvestigation;
+detection->firstInvestigation;
+firstInvestigation->policeDecision1->pursue1;
+
+pursue1->arrest->custody->interrogation->pursueAfterInterrogation;
+
+pursueAfterInterrogation->booking->dropOrRefer->refer;
+
+refer->chargeOrDrop
+
+chargeOrDrop->charge->complaint->arraignment;
+
+arraignment->arraignmentDismissal;
+arraignment->arraignmentProceed;
+arraignmentProceed->felony->grandJury;
+arraignmentProceed->nonfelony->preliminaryHearing->indictment->pleaBargaining;
+preliminaryHearing->bail;
+
+grandJury->grandJuryFindsProbableCause->indictment;
+grandJury->grandJuryNoProbableCause->grandJuryDismissed;
+
+pleaBargaining->settlement;
+pleaBargaining->discovery;
+settlement->sentencing;
+settlement->release;
+
+trial->convict->sentencing->appeal;
+trial->acquit->release;
+
+    appeal->vacatur->release;
+
+appeal->convictionUpheld->habeas;
+appeal->retrial->trial;
+
+habeas->habeasDenied->cert;
+habeas->habeasGranted;
+`}rankdir="TB" width={350} height={160}/>

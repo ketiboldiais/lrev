@@ -39,11 +39,30 @@ import Terry from "@CasesCrimPro/terry_v_ohio.mdx";
 3. [6th Amendment](#6th-amendment)
    1. [When the 6th Amendment Right to Counsel Applies](#when-the-6th-amendment-right-to-counsel-applies)
    2. [Violations of the 6th Amendment Right to Counsel](#violations-of-the-6th-amendment-right-to-counsel)
-4. [Standards](#standards)
+   3. [Waiver of the 6th Amendment Right to Counsel](#waiver-of-the-6th-amendment-right-to-counsel)
+   4. [Ineffective Assistance of Counsel](#ineffective-assistance-of-counsel)
+   5. [Identification Procedures](#identification-procedures)
+      1. [Photo Arrays](#photo-arrays)
+      2. [Pre-indictment Lineups](#pre-indictment-lineups)
+      3. [Post-indictment Lineups](#post-indictment-lineups)
+4. [Fruit of the Poisonous Tree](#fruit-of-the-poisonous-tree)
+   1. [Limitations](#limitations)
+5. [Standards](#standards)
    1. [Preponderance of the Evidence](#preponderance-of-the-evidence)
    2. [Beyond Reasonable Doubt (BRD)](#beyond-reasonable-doubt-brd)
 
-Criminal procedure is the body law governing how the prosecution, defense, and judgments of crime are conducted.
+Criminal procedure is the body law governing how the prosecution, defense, and judgments of crime are conducted. Criminal procedure is best studied by keeping a perspective of the trial process:
+
+<Fig
+  link={
+    "/images/crimProcess.svg"
+  }
+  caption={"From suspicion to petition"}
+  width={"95"}
+  height={"100"}
+  imwidth={"350"}
+  imheight={"160"}
+/>
 
 ## 4th Amendment
 
@@ -173,14 +192,16 @@ The fourth amendment governs searches and seizures. The amendment provides:
     />
 
 ##### Plain View
+
 - Law enforcement officers may seize evidence without a warrant if:[^plain_view_note]
   1. [ ] the officers are [legally on the premises](#lawful-place-requirement),
   2. [ ] the evidence is [observed in plain view](#what-constitutes-plain-view), <AND/>
   3. [ ] there is [probable cause](#probable-cause) to believe the items are evidence of
-      - [ ] are crime, <OR/>
-      - [ ] contraband
-  
+     - [ ] are crime, <OR/>
+     - [ ] contraband
+
 ###### Lawful Place Requirement
+
 - To satisfy the "legally on the premises" requirement, the officers must:[^horton]
   1. [ ] be lawfully at their viewing location, <AND/>
   2. [ ] have a lawful means to access the item
@@ -197,6 +218,7 @@ The fourth amendment governs searches and seizures. The amendment provides:
     />
 
 ###### What Constitute's Plain View?
+
 - Evidence is considered "in plain view" if its nature is immediately apparent through any of the officer's (touch, taste, smell, sight, sound).
 - Officers cannot move or manipulate objects to get a better view.[^hicks]
 
@@ -210,6 +232,7 @@ The fourth amendment governs searches and seizures. The amendment provides:
       court="U.S."
       year={1983}
     />
+
 [^hicks]:
     <Case
       p1="Arizon"
@@ -222,18 +245,30 @@ The fourth amendment governs searches and seizures. The amendment provides:
     />
 
 ##### Administrative Searches
+
 - Law enforcement officers do not need warrants to conduct a search if the search is:[^burger]
   1. [ ] reasonable, <AND/>
   2. [ ] conducted pursuant to established police agency procedures that are:
-      - [ ] designed to meet
-      - [ ] legitimate objectives
-      - [ ] while limiting the officer's discretion
+     - [ ] designed to meet
+     - [ ] legitimate objectives
+     - [ ] while limiting the officer's discretion
 - Example:
   - Officers do not need warrants to conduct searches in airplane boarding areas, international borders, roadblocks for drunk drivers, or roadblocks for information requests.
 
-[^burger]: <Case p1="New York" p2="Burger" volume={482} reporter="U.S." page={691} court="U.S." year={1987} caseBrief={<Burger/>}/>
+[^burger]:
+    <Case
+      p1="New York"
+      p2="Burger"
+      volume={482}
+      reporter="U.S."
+      page={691}
+      court="U.S."
+      year={1987}
+      caseBrief={<Burger />}
+    />
 
 ##### Terry Stops
+
 - Law enforcement officers can stop an individual if:[^terry]
   1. [ ] the officer has a reasonable suspicion
   2. [ ] based on articulable facts
@@ -244,16 +279,38 @@ The fourth amendment governs searches and seizures. The amendment provides:
 - But, the officer **cannot** initiate a search for evidence.
 - If the frisk for weapons reveals objects whose shape makes their identity obvious (e.g., some object is clearly a gun), the officer may seize those objects.
 
-[^terry]: <Case p1="Terry" p2="Ohio" volume={392} reporter="U.S." page={1} court="U.S." year={1968} caseBrief={<Terry/>}/>
+[^terry]:
+    <Case
+      p1="Terry"
+      p2="Ohio"
+      volume={392}
+      reporter="U.S."
+      page={1}
+      court="U.S."
+      year={1968}
+      caseBrief={<Terry />}
+    />
 
 ### Seizures
+
 - A seizure is any government conduct that restrains an individual's freedom.[^terry_seizure].
 - To arrest a person, law enforcement officers must have:
   - [ ] [probable cause](#probable-cause) to believe that the individual has committed a crime
 
-[^terry_seizure]: <Case p1="Terry" p2="Ohio" volume={392} reporter="U.S." page={1} court="U.S." year={1968} caseBrief={<Terry/>}/>
+[^terry_seizure]:
+    <Case
+      p1="Terry"
+      p2="Ohio"
+      volume={392}
+      reporter="U.S."
+      page={1}
+      court="U.S."
+      year={1968}
+      caseBrief={<Terry />}
+    />
 
 #### Arrest Warrants
+
 - Government arrests come in two forms:
   1. warrantless arrests,
   2. arrests with a warrant
@@ -309,11 +366,13 @@ The fourth amendment governs searches and seizures. The amendment provides:
 </table>
 
 ### Probable Cause
+
 - An officer has probable cause if:
   1. [ ] the officer witness the commission of the crime, <OR/>
   2. [ ] a person tells the officer that a crime has been committed
 
 ## 5th Amendment
+
 The 5th Amendment provides the right against self-incrimination. It's what ensures that the government does not engage in activites like torturing individuals for confessions. More generally, the 5th Amendment protects against the government compelling individuals to give [involuntary statements](#involuntary-statements).
 
 The amendment provides:
@@ -323,6 +382,7 @@ The amendment provides:
 Defendans who wish to exercise their 5th Amendment right ("pleading the fifth") can do so by simply not taking the stand.
 
 ### Government Interrogation
+
 - Under _Miranda_, if:[^miranda]
   1. [ ] law enforcement officers obtain a suspect's self-incriminating statement,
   2. [ ] from a [custodial interrogation](#custodial-interrogation) of the suspect, <AND/>
@@ -330,19 +390,31 @@ Defendans who wish to exercise their 5th Amendment right ("pleading the fifth") 
   4. [ ] the officers did not inform the suspect of their _Miranda rights_,
   - => the self-incriminating statement may not be used at a subsequent trial
 
-[^miranda]: <Case p1="Miranda" p2="Arizona" volume={384} reporter="U.S." page={436} court="U.S." year={1966}/>
+[^miranda]:
+    <Case
+      p1="Miranda"
+      p2="Arizona"
+      volume={384}
+      reporter="U.S."
+      page={436}
+      court="U.S."
+      year={1966}
+    />
 
 #### Custodial Interrogation
+
 - A person is subject to custodial interrogation when:
   1. [ ] the person is [custody](#custody), <AND/>
   2. [ ] the person is subject to [police interrogation](#police-interrogation)
 
 ##### Custody
+
 - A person is in custody when:
   1. [ ] the person reasonably believes that
   2. [ ] they are **not** free to leave
 
 ##### Police Interrogation
+
 - A person is subject to police interrogation when:
   1. [ ] the police know or should know
   2. [ ] that their words or actions are likely to elicit
@@ -350,6 +422,7 @@ Defendans who wish to exercise their 5th Amendment right ("pleading the fifth") 
 - Note that this means that _Miranda_ does not protect against volunteered statements, since, by definition, they're not the product of interrogation.
 
 #### Miranda Warnings
+
 - For the police to use a person's self-incriminating statements obtained during a custodial interrogation, the police **must** inform the suspect of their _Miranda_ rights **before** the custodial interrogation.
 - These rights are:
   1. the suspect has a right to remain silent,
@@ -361,21 +434,25 @@ Defendans who wish to exercise their 5th Amendment right ("pleading the fifth") 
   - "You have the right to remain silent. Anything you say can and will be used against you in a court of law. You have the right to speak to an attorney, and to have an attorney present during any questioning. If you cannot afford an attorney, one will be provided for you at government expense."
 
 #### Waiver of Miranda Rights
+
 - A defendant may knowingly and voluntarily wave their _Miranda_ rights.
 - The burden is on the government to demonstrate, by a [preponderance of the evidence](#preponderance-of-the-evidence), that the waiver was made knowingly and voluntarily.
 
 #### Invocation of Miranda Rights
+
 - During a [custodial interrogation](#custodial-interrogation), the police **must** cease their interrogation if any of the follow occurs:
   1. [ ] the interogee affirmatively [invokes their right to remain silent](#invocation-of-the-right-to-remain-silent-during-interrogation), <OR/>
   2. [ ] the intergoee affirmatively [invokes their right to counsel](#invocation-of-the-right-to-counsel-during-interrogation)
 
 ##### Invocation of the Right to Remain Silent During Interrogation
+
 - During a [custodial interrogation](#custodial-interrogation), the moment the interrogation subject invokes their right to remain silent, the police must cease the interrogation.
 - LIMITATION: The police can interrogate the suspect if:
   1. [ ] a substantial period of time has passed after the invocation, <AND/>
   2. [ ] the police [inform the suspect of their Miranda rights again](#miranda-warnings).
 
 ##### Invocation of the Right to Counsel During Interrogation
+
 - During a [custodial interrogation](#custodial-interrogation), the moment the interrogation subject invokes their right to counsel, the police must cease the interrogation.
 - The interrogation **cannot resume** until one of the following occurs:
   1. the interogee's lawyer is present;
@@ -383,6 +460,7 @@ Defendans who wish to exercise their 5th Amendment right ("pleading the fifth") 
   3. 14 days have passed since the interogee was released from custody
 
 #### Miranda Violations
+
 - _Miranda_ is violated if any of the following occur:
   1. [ ] the police fail to [inform the suspect of their _Miranda_ rights](#miranda-warnings),
   2. [ ] the police fail to cease interrogation after the interrogee has affirmatively [invoked their right to remain silent](#invocation-of-the-right-to-remain-silent-during-interrogation),
@@ -392,6 +470,7 @@ Defendans who wish to exercise their 5th Amendment right ("pleading the fifth") 
 - Evidence obtained from a **voluntary statement** obtained in violation of _Miranda_ is admissible.
 
 ### Involuntary Statements
+
 - Involuntary statements are considered _fruit of the poisonous tree_ — they are presumptively **inadmissible** against a defendant for substantive or impeachment purposes.
 - A statement is considered involuntary only if the police **coerced** the defendant into making the statement.
 - To determine whether a statement was coerced by the police, courts look at the _totality of the circumstances_ by considering the following questions:
@@ -400,14 +479,16 @@ Defendans who wish to exercise their 5th Amendment right ("pleading the fifth") 
   3. **Location**. Where did the interogation take place?
   4. **Tactics**. What [interrogation tactics](#interrogation-tactics) were used?
   5. **Character**. What is the [interogee's character](#interogees-character)?
-  
+
 #### Interrogation Tactics
+
 - If a person makes a statement because the interrogating officers used force or threatened to use force, that statement is involuntary.
 - If a person makes a statement becuase the interrogating officers tricked or made false promises, the statements _may_ be considered involuntary.
   - This is an extremely murky and grey area.
   - The fact that the police used deceit or fraud (e.g., lying about an accomplice's confession) does not imply that the statement is involuntary.
 
 #### Interogee's Character
+
 - Factors to consider include:
   1. Does the interogee have experience with interrogations?
   2. Does the interogee have a mental condition?
@@ -415,6 +496,7 @@ Defendans who wish to exercise their 5th Amendment right ("pleading the fifth") 
   4. What is the interogee's education level? Are they literate?
 
 ## 6th Amendment
+
 The 6th Amendment guarantees a criminal defendant the right to counsel for their defense. The amendment provides:
 
 > In all criminal prosecutions, the accused shall enjoy the right to a speedy and public trial, by an impartial jury of the State and district wherein the crime shall have been committed, which district shall have been previously ascertained by law, and to be informed of the nature and cause of the accusation; to be confronted with the witnesses against him; to have compulsory process for obtaining witnesses in his favor, and to have the Assistance of Counsel for his defence.
@@ -422,6 +504,7 @@ The 6th Amendment guarantees a criminal defendant the right to counsel for their
 Note that this is a separate right to counsel from the 5th Amendment right to counsel. For the 5th Amendment right to counsel, individuals must affirmatively invoke the right. The 6th Amendment right to counsel, however, attaches automatically.
 
 ### When the 6th Amendment Right to Counsel Applies
+
 - A person has a right to counsel when formal adversarial judicial proceedings have started.
 - These proceedings include:
   1. formal charging,
@@ -431,24 +514,91 @@ Note that this is a separate right to counsel from the 5th Amendment right to co
   5. all parts of the trial process
 
 ### Violations of the 6th Amendment Right to Counsel
+
 - IF:
   1. [ ] a person's 6th Amendment right to counsel applies,
   2. [ ] the State obtains statements from the person,
   3. [ ] about an offense the person is formally charged with, <AND/>
-  4. [ ] the person has not waived their 6th Amendment right to counsel,
+  4. [ ] the person has not [waived their 6th Amendment right to counsel](#waiver-of-the-6th-amendment-right-to-counsel),
   - => such statements are inadmissible in trial
   - ELSE: the statements are admissible
+- Because of condition (3), it follows that the police are free to question a defendant about unrelated offenses without their attorney present (either expressly or through covert means).
+
+### Waiver of the 6th Amendment Right to Counsel
+
+- A defendant waives their 6th Amendment right to counsel ONLY IF the person:
+  1. [ ] voluntarily waives the right,
+  2. [ ] knowingly waives the right, <AND/>
+  3. [ ] intelligently waives the right
+- The defendant must understand the nature of the right being waived and the consequences of waiver.
+
+### Ineffective Assistance of Counsel
+
+- The 6th Amendment right to counsel implies a right to **effective assistance of counsel**.
+- If a convicted defendant can prove that they had ineffective assistance of counsel at trial, their conviction can be overturned.
+- To prove ineffective assistance, a defendant must show:
+  1. [ ] that their trial lawyer's performance fell below an objective standard of reasonableness, <AND/>
+  2. [ ] that there is a reasonable probability that the result of the proceeding would have been different but for their counsel's unprofessional errors.
+
+### Identification Procedures
+
+- There are three types of identification procedures:
+  1. Photo arrays,
+  2. Pre-indictment lineups, and
+  3. Post-indictment lineups
+- There are rules limiting when and how the State may use the procedures.
+
+#### Photo Arrays
+
+- A defendant and their attorney **does not** have a right to be present for a photo array.
+- But, the police must over the photo array to the defendant.
+
+#### Pre-indictment Lineups
+
+- The defendant **does not** have a 6th Amendment right to have counsel present during a pre-indictment lineup.
+
+#### Post-indictment Lineups
+
+- The defendant has a 6th Amendment right to have counsel present during a post-indictment lineup.
+- If that right is violated, then evidence that the witness identified at the lineup will be excluded at trial.
+
+## Fruit of the Poisonous Tree
+
+- In criminal cases, evidence obtained in violation of the defendant's 4th, 5th, or 6th Amendment rights is inadmissible in a criminal case. This is called the **exclusionary rule**.
+- More generally, any evidence obtained as a result of a constitutional violation is inadmissible as fruit of the poisonous tree.
+- <Red text={"NOTE"} />: The poisonous fruit doctrine does not apply to
+  _Miranda_ violations — it only applies to violations of the 4th, 5th, or 6th
+  Amendment.
+
+### Limitations
+
+- The exclusionary does not apply if any one of the following conditions are met:
+  1. [ ] **Independent source.** The police had:
+     - [ ] an independent source for the evidence distinct from the original source, and
+     - [ ] the independent source was distinct from the original illegal source
+       <OR />
+  2. [ ] **Inevitability.** The evidence's discovery was inevitable regardless of the violation,
+     <OR />
+  3. [ ] **Attenuation**. There is attenuation in the causal chain, such that intervening events and the passage of time can remove the taint,
+     <OR />
+  4. [ ] **Good Faith.** The police obtained the evidence:
+     - [ ] relying in good faith on a law later declared unconstitutional,
+       <OR />
+     - [ ] relying on a warrant that, while facially valid, is later found defective
 
 ## Standards
+
 - There are different standards used in criminal law.
 
 ### Preponderance of the Evidence
+
 - Under the preponderance standard, the burden of proof is met when:
   1. [ ] the party with the burden
   2. [ ] convinces the fact finder that
   3. [ ] there is a greater than 50% chance that the claim is true
 
 ### Beyond Reasonable Doubt (BRD)
+
 - Under BRD, the party bearing the burden meets its burden of proof when:
   1. [ ] the party with the burden (the State),
   2. [ ] convinces the fact finder that,

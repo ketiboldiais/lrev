@@ -1,0 +1,507 @@
+<svg width="350" height="160" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0.00 0.00 1359.48 600.80">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 596.8)">
+<title>%0</title>
+<polygon fill="none" stroke="transparent" points="-4,4 -4,-596.8 1355.4822,-596.8 1355.4822,4 -4,4"></polygon>
+<!-- detection -->
+<g id="node1" class="node">
+<title>detection</title>
+<text text-anchor="middle" x="141.006" y="-580.2" font-family="Helvetica" font-size="14.00" fill="#000000">crime detected</text>
+</g>
+<!-- firstInvestigation -->
+<g id="node9" class="node">
+<title>firstInvestigation</title>
+<text text-anchor="middle" x="91.006" y="-527.4" font-family="Helvetica" font-size="14.00" fill="#000000">police investigate</text>
+</g>
+<!-- detection&#45;&gt;firstInvestigation -->
+<g id="edge2" class="edge">
+<title>detection-&gt;firstInvestigation</title>
+<path fill="none" stroke="#000000" d="M132.7495,-575.6812C125.5413,-568.0693 114.8962,-556.8281 106.1602,-547.6028"></path>
+<polygon fill="#000000" stroke="#000000" points="108.5261,-545.011 99.1088,-540.1566 103.4435,-549.8242 108.5261,-545.011"></polygon>
+</g>
+<!-- report -->
+<g id="node2" class="node">
+<title>report</title>
+<text text-anchor="middle" x="41.006" y="-580.2" font-family="Helvetica" font-size="14.00" fill="#000000">crime reported</text>
+</g>
+<!-- report&#45;&gt;firstInvestigation -->
+<g id="edge1" class="edge">
+<title>report-&gt;firstInvestigation</title>
+<path fill="none" stroke="#000000" d="M49.2625,-575.6812C56.4707,-568.0693 67.1158,-556.8281 75.8518,-547.6028"></path>
+<polygon fill="#000000" stroke="#000000" points="78.5685,-549.8242 82.9032,-540.1566 73.4859,-545.011 78.5685,-549.8242"></polygon>
+</g>
+<!-- arraignment -->
+<g id="node3" class="node">
+<title>arraignment</title>
+<text text-anchor="middle" x="425.006" y="-580.2" font-family="Helvetica" font-size="14.00" fill="#000000">arraignment</text>
+</g>
+<!-- arraignmentDismissal -->
+<g id="node32" class="node">
+<title>arraignmentDismissal</title>
+<text text-anchor="middle" x="425.006" y="-527.4" font-family="Helvetica" font-size="14.00" fill="#000000">Judge dismisses</text>
+</g>
+<!-- arraignment&#45;&gt;arraignmentDismissal -->
+<g id="edge16" class="edge">
+<title>arraignment-&gt;arraignmentDismissal</title>
+<path fill="none" stroke="#000000" d="M425.006,-575.6812C425.006,-568.7613 425.006,-558.842 425.006,-550.1645"></path>
+<polygon fill="#000000" stroke="#000000" points="428.5061,-550.1566 425.006,-540.1566 421.5061,-550.1566 428.5061,-550.1566"></polygon>
+</g>
+<!-- arraignmentProceed -->
+<g id="node33" class="node">
+<title>arraignmentProceed</title>
+<text text-anchor="middle" x="552.006" y="-527.4" font-family="Helvetica" font-size="14.00" fill="#000000">Judge does not dismiss</text>
+</g>
+<!-- arraignment&#45;&gt;arraignmentProceed -->
+<g id="edge17" class="edge">
+<title>arraignment-&gt;arraignmentProceed</title>
+<path fill="none" stroke="#000000" d="M445.1295,-576.0337C466.0303,-567.3442 498.9407,-553.6618 522.7221,-543.7747"></path>
+<polygon fill="#000000" stroke="#000000" points="524.0865,-546.998 531.9766,-539.9272 521.3992,-540.5343 524.0865,-546.998"></polygon>
+</g>
+<!-- appeal -->
+<g id="node4" class="node">
+<title>appeal</title>
+<text text-anchor="middle" x="904.006" y="-474.6" font-family="Helvetica" font-size="14.00" fill="#000000">appeal</text>
+</g>
+<!-- convictionUpheld -->
+<g id="node38" class="node">
+<title>convictionUpheld</title>
+<text text-anchor="middle" x="1021.006" y="-405" font-family="Helvetica" font-size="14.00" fill="#000000">Conviction upheld</text>
+</g>
+<!-- appeal&#45;&gt;convictionUpheld -->
+<g id="edge40" class="edge">
+<title>appeal-&gt;convictionUpheld</title>
+<path fill="none" stroke="#000000" d="M918.3525,-470.2657C938.2842,-458.4089 974.5648,-436.8266 998.2218,-422.7537"></path>
+<polygon fill="#000000" stroke="#000000" points="1000.1027,-425.7073 1006.9076,-417.5867 996.5239,-419.6913 1000.1027,-425.7073"></polygon>
+</g>
+<!-- retrial -->
+<g id="node39" class="node">
+<title>retrial</title>
+<text text-anchor="middle" x="904.006" y="-405" font-family="Helvetica" font-size="14.00" fill="#000000">Order for re-trial</text>
+</g>
+<!-- appeal&#45;&gt;retrial -->
+<g id="edge42" class="edge">
+<title>appeal-&gt;retrial</title>
+<path fill="none" stroke="#000000" d="M904.006,-470.2657C904.006,-459.8296 904.006,-441.8592 904.006,-428.1065"></path>
+<polygon fill="#000000" stroke="#000000" points="907.5061,-427.8041 904.006,-417.8041 900.5061,-427.8042 907.5061,-427.8041"></polygon>
+</g>
+<!-- vacatur -->
+<g id="node42" class="node">
+<title>vacatur</title>
+<text text-anchor="middle" x="851.006" y="-187.8" font-family="Helvetica" font-size="14.00" fill="#000000">Conviction vacated</text>
+</g>
+<!-- appeal&#45;&gt;vacatur -->
+<g id="edge38" class="edge">
+<title>appeal-&gt;vacatur</title>
+<path fill="none" stroke="#000000" d="M886.5111,-470.4377C873.2293,-463.0236 855.9427,-450.8213 848.006,-434.4 811.1879,-358.2221 834.0459,-252.2036 845.5587,-210.1895"></path>
+<polygon fill="#000000" stroke="#000000" points="848.9376,-211.1035 848.3226,-200.5265 842.2075,-209.1784 848.9376,-211.1035"></polygon>
+</g>
+<!-- trial -->
+<g id="node5" class="node">
+<title>trial</title>
+<text text-anchor="middle" x="933.006" y="-318.6" font-family="Helvetica" font-size="14.00" fill="#000000">trial</text>
+</g>
+<!-- convict -->
+<g id="node7" class="node">
+<title>convict</title>
+<text text-anchor="middle" x="1018.006" y="-249" font-family="Helvetica" font-size="14.00" fill="#000000">convict</text>
+</g>
+<!-- trial&#45;&gt;convict -->
+<g id="edge33" class="edge">
+<title>trial-&gt;convict</title>
+<path fill="none" stroke="#000000" d="M943.4287,-314.2657C957.3964,-302.8286 982.4155,-282.3423 999.5947,-268.2756"></path>
+<polygon fill="#000000" stroke="#000000" points="1002.2438,-270.6301 1007.7636,-261.5867 997.809,-265.2141 1002.2438,-270.6301"></polygon>
+</g>
+<!-- acquit -->
+<g id="node8" class="node">
+<title>acquit</title>
+<text text-anchor="middle" x="933.006" y="-249" font-family="Helvetica" font-size="14.00" fill="#000000">acquit</text>
+</g>
+<!-- trial&#45;&gt;acquit -->
+<g id="edge36" class="edge">
+<title>trial-&gt;acquit</title>
+<path fill="none" stroke="#000000" d="M933.006,-314.2657C933.006,-303.8296 933.006,-285.8592 933.006,-272.1065"></path>
+<polygon fill="#000000" stroke="#000000" points="936.5061,-271.8041 933.006,-261.8041 929.5061,-271.8042 936.5061,-271.8041"></polygon>
+</g>
+<!-- habeas -->
+<g id="node6" class="node">
+<title>habeas</title>
+<text text-anchor="middle" x="1173.006" y="-318.6" font-family="Helvetica" font-size="14.00" fill="#000000">Habeas petition</text>
+</g>
+<!-- habeasDenied -->
+<g id="node40" class="node">
+<title>habeasDenied</title>
+<text text-anchor="middle" x="1136.006" y="-249" font-family="Helvetica" font-size="14.00" fill="#000000">Habeas petition denied</text>
+</g>
+<!-- habeas&#45;&gt;habeasDenied -->
+<g id="edge44" class="edge">
+<title>habeas-&gt;habeasDenied</title>
+<path fill="none" stroke="#000000" d="M1168.4691,-314.2657C1162.7547,-303.5166 1152.7912,-284.7742 1145.4051,-270.8804"></path>
+<polygon fill="#000000" stroke="#000000" points="1148.3646,-268.9911 1140.58,-261.8041 1142.1837,-272.2769 1148.3646,-268.9911"></polygon>
+</g>
+<!-- habeasGranted -->
+<g id="node41" class="node">
+<title>habeasGranted</title>
+<text text-anchor="middle" x="1285.006" y="-249" font-family="Helvetica" font-size="14.00" fill="#000000">Habeas petition granted</text>
+</g>
+<!-- habeas&#45;&gt;habeasGranted -->
+<g id="edge46" class="edge">
+<title>habeas-&gt;habeasGranted</title>
+<path fill="none" stroke="#000000" d="M1186.7394,-314.2657C1205.7349,-302.4613 1240.2424,-281.0174 1262.8941,-266.9409"></path>
+<polygon fill="#000000" stroke="#000000" points="1264.8639,-269.8377 1271.5101,-261.5867 1261.1691,-263.8922 1264.8639,-269.8377"></polygon>
+</g>
+<!-- sentencing -->
+<g id="node34" class="node">
+<title>sentencing</title>
+<text text-anchor="middle" x="904.006" y="-527.4" font-family="Helvetica" font-size="14.00" fill="#000000">sentencing</text>
+</g>
+<!-- convict&#45;&gt;sentencing -->
+<g id="edge34" class="edge">
+<title>convict-&gt;sentencing</title>
+<path fill="none" stroke="#000000" d="M1025.8855,-261.6466C1049.8817,-288.4286 1118.2667,-373.2845 1082.006,-434.4 1052.2331,-484.5806 986.4187,-510.5246 943.6994,-522.5827"></path>
+<polygon fill="#000000" stroke="#000000" points="942.6474,-519.2412 933.9009,-525.2203 944.467,-526.0006 942.6474,-519.2412"></polygon>
+</g>
+<!-- release -->
+<g id="node23" class="node">
+<title>release</title>
+<text text-anchor="middle" x="851.006" y="-65.4" font-family="Helvetica" font-size="14.00" fill="#000000">release</text>
+</g>
+<!-- acquit&#45;&gt;release -->
+<g id="edge37" class="edge">
+<title>acquit-&gt;release</title>
+<path fill="none" stroke="#000000" d="M931.797,-244.7466C929.5248,-230.1492 923.9297,-199.4508 914.006,-175.2 900.3257,-141.7692 877.2075,-106.3987 863.1037,-86.257"></path>
+<polygon fill="#000000" stroke="#000000" points="865.8057,-84.0175 857.1544,-77.9015 860.1035,-88.0776 865.8057,-84.0175"></polygon>
+</g>
+<!-- policeDecision1 -->
+<g id="node13" class="node">
+<title>policeDecision1</title>
+<text text-anchor="middle" x="91.006" y="-474.6" font-family="Helvetica" font-size="14.00" fill="#000000">Decision: Pursue or drop</text>
+</g>
+<!-- firstInvestigation&#45;&gt;policeDecision1 -->
+<g id="edge3" class="edge">
+<title>firstInvestigation-&gt;policeDecision1</title>
+<path fill="none" stroke="#000000" d="M91.006,-522.8812C91.006,-515.9613 91.006,-506.042 91.006,-497.3645"></path>
+<polygon fill="#000000" stroke="#000000" points="94.5061,-497.3566 91.006,-487.3566 87.5061,-497.3566 94.5061,-497.3566"></polygon>
+</g>
+<!-- pursue1 -->
+<g id="node10" class="node">
+<title>pursue1</title>
+<text text-anchor="middle" x="91.006" y="-405" font-family="Helvetica" font-size="14.00" fill="#000000">pursue</text>
+</g>
+<!-- arrest -->
+<g id="node17" class="node">
+<title>arrest</title>
+<text text-anchor="middle" x="91.006" y="-318.6" font-family="Helvetica" font-size="14.00" fill="#000000">arrest</text>
+</g>
+<!-- pursue1&#45;&gt;arrest -->
+<g id="edge5" class="edge">
+<title>pursue1-&gt;arrest</title>
+<path fill="none" stroke="#000000" d="M91.006,-400.5998C91.006,-386.8144 91.006,-359.4636 91.006,-341.1467"></path>
+<polygon fill="#000000" stroke="#000000" points="94.5061,-341.1113 91.006,-331.1113 87.5061,-341.1114 94.5061,-341.1113"></polygon>
+</g>
+<!-- booking -->
+<g id="node11" class="node">
+<title>booking</title>
+<text text-anchor="middle" x="261.006" y="-421.8" font-family="Helvetica" font-size="14.00" fill="#000000">suspected</text>
+<text text-anchor="middle" x="261.006" y="-405" font-family="Helvetica" font-size="14.00" fill="#000000">booked</text>
+<text text-anchor="middle" x="261.006" y="-388.2" font-family="Helvetica" font-size="14.00" fill="#000000">into jail</text>
+</g>
+<!-- dropOrRefer -->
+<g id="node16" class="node">
+<title>dropOrRefer</title>
+<text text-anchor="middle" x="267.006" y="-335.4" font-family="Helvetica" font-size="14.00" fill="#000000">Police decision:</text>
+<text text-anchor="middle" x="267.006" y="-318.6" font-family="Helvetica" font-size="14.00" fill="#000000">Refer to</text>
+<text text-anchor="middle" x="267.006" y="-301.8" font-family="Helvetica" font-size="14.00" fill="#000000">prosector or drop</text>
+</g>
+<!-- booking&#45;&gt;dropOrRefer -->
+<g id="edge10" class="edge">
+<title>booking-&gt;dropOrRefer</title>
+<path fill="none" stroke="#000000" d="M262.7737,-383.7445C263.3291,-375.7467 263.9527,-366.7668 264.5471,-358.2088"></path>
+<polygon fill="#000000" stroke="#000000" points="268.0496,-358.2921 265.2509,-348.0736 261.0664,-357.8071 268.0496,-358.2921"></polygon>
+</g>
+<!-- interrogation -->
+<g id="node12" class="node">
+<title>interrogation</title>
+<text text-anchor="middle" x="173.006" y="-405" font-family="Helvetica" font-size="14.00" fill="#000000">interrogation</text>
+</g>
+<!-- pursueAfterInterrogation -->
+<g id="node15" class="node">
+<title>pursueAfterInterrogation</title>
+<text text-anchor="middle" x="182.006" y="-318.6" font-family="Helvetica" font-size="14.00" fill="#000000">pursue</text>
+</g>
+<!-- interrogation&#45;&gt;pursueAfterInterrogation -->
+<g id="edge8" class="edge">
+<title>interrogation-&gt;pursueAfterInterrogation</title>
+<path fill="none" stroke="#000000" d="M173.9019,-400.5998C175.3378,-386.8144 178.1869,-359.4636 180.0949,-341.1467"></path>
+<polygon fill="#000000" stroke="#000000" points="183.5852,-341.4202 181.1402,-331.1113 176.6229,-340.6949 183.5852,-341.4202"></polygon>
+</g>
+<!-- policeDecision1&#45;&gt;pursue1 -->
+<g id="edge4" class="edge">
+<title>policeDecision1-&gt;pursue1</title>
+<path fill="none" stroke="#000000" d="M91.006,-470.2657C91.006,-459.8296 91.006,-441.8592 91.006,-428.1065"></path>
+<polygon fill="#000000" stroke="#000000" points="94.5061,-427.8041 91.006,-417.8041 87.5061,-427.8042 94.5061,-427.8041"></polygon>
+</g>
+<!-- chargeOrDrop -->
+<g id="node14" class="node">
+<title>chargeOrDrop</title>
+<text text-anchor="middle" x="267.006" y="-196.2" font-family="Helvetica" font-size="14.00" fill="#000000">Prosecutor decision:</text>
+<text text-anchor="middle" x="267.006" y="-179.4" font-family="Helvetica" font-size="14.00" fill="#000000">charge or release</text>
+</g>
+<!-- charge -->
+<g id="node20" class="node">
+<title>charge</title>
+<text text-anchor="middle" x="286.006" y="-126.6" font-family="Helvetica" font-size="14.00" fill="#000000">charge</text>
+</g>
+<!-- chargeOrDrop&#45;&gt;charge -->
+<g id="edge13" class="edge">
+<title>chargeOrDrop-&gt;charge</title>
+<path fill="none" stroke="#000000" d="M272.1978,-175.2768C274.7036,-167.2055 277.7168,-157.4999 280.2882,-149.2174"></path>
+<polygon fill="#000000" stroke="#000000" points="283.7117,-149.9944 283.3341,-139.4063 277.0264,-147.9189 283.7117,-149.9944"></polygon>
+</g>
+<!-- pursueAfterInterrogation&#45;&gt;booking -->
+<g id="edge9" class="edge">
+<title>pursueAfterInterrogation-&gt;booking</title>
+<path fill="none" stroke="#000000" d="M189.8605,-331.3903C199.3617,-341.7814 215.9198,-359.8905 230.6724,-376.025"></path>
+<polygon fill="#000000" stroke="#000000" points="228.3997,-378.7262 237.7307,-383.7445 233.5657,-374.0026 228.3997,-378.7262"></polygon>
+</g>
+<!-- refer -->
+<g id="node19" class="node">
+<title>refer</title>
+<text text-anchor="middle" x="267.006" y="-249" font-family="Helvetica" font-size="14.00" fill="#000000">refer</text>
+</g>
+<!-- dropOrRefer&#45;&gt;refer -->
+<g id="edge11" class="edge">
+<title>dropOrRefer-&gt;refer</title>
+<path fill="none" stroke="#000000" d="M267.006,-297.2787C267.006,-288.8332 267.006,-279.6012 267.006,-271.7781"></path>
+<polygon fill="#000000" stroke="#000000" points="270.5061,-271.5802 267.006,-261.5802 263.5061,-271.5803 270.5061,-271.5802"></polygon>
+</g>
+<!-- custody -->
+<g id="node18" class="node">
+<title>custody</title>
+<text text-anchor="middle" x="113.006" y="-249" font-family="Helvetica" font-size="14.00" fill="#000000">custody</text>
+</g>
+<!-- arrest&#45;&gt;custody -->
+<g id="edge6" class="edge">
+<title>arrest-&gt;custody</title>
+<path fill="none" stroke="#000000" d="M93.7036,-314.2657C97.0354,-303.7253 102.7965,-285.4991 107.1598,-271.6952"></path>
+<polygon fill="#000000" stroke="#000000" points="110.6096,-272.394 110.2863,-261.8041 103.935,-270.2842 110.6096,-272.394"></polygon>
+</g>
+<!-- custody&#45;&gt;interrogation -->
+<g id="edge7" class="edge">
+<title>custody-&gt;interrogation</title>
+<path fill="none" stroke="#000000" d="M116.2478,-261.6287C125.6689,-286.1234 153.1926,-357.6852 166.1327,-391.3294"></path>
+<polygon fill="#000000" stroke="#000000" points="162.9236,-392.7357 169.7801,-400.8128 169.457,-390.2229 162.9236,-392.7357"></polygon>
+</g>
+<!-- refer&#45;&gt;chargeOrDrop -->
+<g id="edge12" class="edge">
+<title>refer-&gt;chargeOrDrop</title>
+<path fill="none" stroke="#000000" d="M267.006,-244.6904C267.006,-238.0087 267.006,-228.3182 267.006,-219.0647"></path>
+<polygon fill="#000000" stroke="#000000" points="270.5061,-218.9866 267.006,-208.9866 263.5061,-218.9867 270.5061,-218.9866"></polygon>
+</g>
+<!-- complaint -->
+<g id="node31" class="node">
+<title>complaint</title>
+<text text-anchor="middle" x="329.006" y="-73.8" font-family="Helvetica" font-size="14.00" fill="#000000">prosecutor files</text>
+<text text-anchor="middle" x="329.006" y="-57" font-family="Helvetica" font-size="14.00" fill="#000000">complaint with judge</text>
+</g>
+<!-- charge&#45;&gt;complaint -->
+<g id="edge14" class="edge">
+<title>charge-&gt;complaint</title>
+<path fill="none" stroke="#000000" d="M291.985,-122.2904C296.9825,-115.1776 304.3757,-104.6552 311.2438,-94.8801"></path>
+<polygon fill="#000000" stroke="#000000" points="314.1857,-96.7811 317.0709,-86.5866 308.4581,-92.7568 314.1857,-96.7811"></polygon>
+</g>
+<!-- indictment -->
+<g id="node21" class="node">
+<title>indictment</title>
+<text text-anchor="middle" x="692.006" y="-249" font-family="Helvetica" font-size="14.00" fill="#000000">indictment issued</text>
+</g>
+<!-- pleaBargaining -->
+<g id="node25" class="node">
+<title>pleaBargaining</title>
+<text text-anchor="middle" x="693.006" y="-187.8" font-family="Helvetica" font-size="14.00" fill="#000000">plea bargaining</text>
+</g>
+<!-- indictment&#45;&gt;pleaBargaining -->
+<g id="edge23" class="edge">
+<title>indictment-&gt;pleaBargaining</title>
+<path fill="none" stroke="#000000" d="M692.145,-244.6904C692.2883,-235.9211 692.5163,-221.9689 692.7017,-210.6243"></path>
+<polygon fill="#000000" stroke="#000000" points="696.2042,-210.4932 692.8681,-200.4373 689.2051,-210.3788 696.2042,-210.4932"></polygon>
+</g>
+<!-- preliminaryHearing -->
+<g id="node22" class="node">
+<title>preliminaryHearing</title>
+<text text-anchor="middle" x="548.006" y="-65.4" font-family="Helvetica" font-size="14.00" fill="#000000">preliminary hearing</text>
+</g>
+<!-- preliminaryHearing&#45;&gt;indictment -->
+<g id="edge22" class="edge">
+<title>preliminaryHearing-&gt;indictment</title>
+<path fill="none" stroke="#000000" d="M552.5545,-77.9834C564.9841,-100.4993 601.2574,-163.6384 641.006,-208.8 650.5799,-219.6777 662.7785,-230.3883 672.8446,-238.5638"></path>
+<polygon fill="#000000" stroke="#000000" points="670.6827,-241.3163 680.6943,-244.7831 675.0297,-235.8296 670.6827,-241.3163"></polygon>
+</g>
+<!-- bail -->
+<g id="node24" class="node">
+<title>bail</title>
+<text text-anchor="middle" x="548.006" y="-4.2" font-family="Helvetica" font-size="14.00" fill="#000000">bail</text>
+</g>
+<!-- preliminaryHearing&#45;&gt;bail -->
+<g id="edge24" class="edge">
+<title>preliminaryHearing-&gt;bail</title>
+<path fill="none" stroke="#000000" d="M548.006,-61.0904C548.006,-52.3211 548.006,-38.3689 548.006,-27.0243"></path>
+<polygon fill="#000000" stroke="#000000" points="551.5061,-26.8373 548.006,-16.8373 544.5061,-26.8374 551.5061,-26.8373"></polygon>
+</g>
+<!-- discovery -->
+<g id="node26" class="node">
+<title>discovery</title>
+<text text-anchor="middle" x="693.006" y="-126.6" font-family="Helvetica" font-size="14.00" fill="#000000">discovery</text>
+</g>
+<!-- pleaBargaining&#45;&gt;discovery -->
+<g id="edge30" class="edge">
+<title>pleaBargaining-&gt;discovery</title>
+<path fill="none" stroke="#000000" d="M693.006,-183.4904C693.006,-174.7211 693.006,-160.7689 693.006,-149.4243"></path>
+<polygon fill="#000000" stroke="#000000" points="696.5061,-149.2373 693.006,-139.2373 689.5061,-149.2374 696.5061,-149.2373"></polygon>
+</g>
+<!-- settlement -->
+<g id="node27" class="node">
+<title>settlement</title>
+<text text-anchor="middle" x="769.006" y="-126.6" font-family="Helvetica" font-size="14.00" fill="#000000">settlement</text>
+</g>
+<!-- pleaBargaining&#45;&gt;settlement -->
+<g id="edge29" class="edge">
+<title>pleaBargaining-&gt;settlement</title>
+<path fill="none" stroke="#000000" d="M703.5735,-183.4904C715.7113,-173.7163 735.8448,-157.5035 750.5785,-145.639"></path>
+<polygon fill="#000000" stroke="#000000" points="752.9348,-148.2353 758.5283,-139.2373 748.5444,-142.7832 752.9348,-148.2353"></polygon>
+</g>
+<!-- settlement&#45;&gt;release -->
+<g id="edge32" class="edge">
+<title>settlement-&gt;release</title>
+<path fill="none" stroke="#000000" d="M780.4077,-122.2904C793.6262,-112.4249 815.6335,-95.9999 831.5679,-84.1075"></path>
+<polygon fill="#000000" stroke="#000000" points="833.7805,-86.8235 839.7011,-78.0373 829.5936,-81.2137 833.7805,-86.8235"></polygon>
+</g>
+<!-- settlement&#45;&gt;sentencing -->
+<g id="edge31" class="edge">
+<title>settlement-&gt;sentencing</title>
+<path fill="none" stroke="#000000" d="M769.006,-139.111C769.006,-158.8824 769.006,-210.275 769.006,-253.2 769.006,-409.2 769.006,-409.2 769.006,-409.2 769.006,-464.5849 832.1387,-501.4603 872.0577,-519.2409"></path>
+<polygon fill="#000000" stroke="#000000" points="870.8399,-522.5268 881.41,-523.2492 873.5975,-516.0928 870.8399,-522.5268"></polygon>
+</g>
+<!-- felony -->
+<g id="node28" class="node">
+<title>felony</title>
+<text text-anchor="middle" x="590.006" y="-474.6" font-family="Helvetica" font-size="14.00" fill="#000000">felonies</text>
+</g>
+<!-- grandJury -->
+<g id="node30" class="node">
+<title>grandJury</title>
+<text text-anchor="middle" x="592.006" y="-413.4" font-family="Helvetica" font-size="14.00" fill="#000000">prosecutor presents</text>
+<text text-anchor="middle" x="592.006" y="-396.6" font-family="Helvetica" font-size="14.00" fill="#000000">case to grand jury</text>
+</g>
+<!-- felony&#45;&gt;grandJury -->
+<g id="edge19" class="edge">
+<title>felony-&gt;grandJury</title>
+<path fill="none" stroke="#000000" d="M590.2512,-470.2657C590.4949,-461.787 590.8814,-448.3351 591.2298,-436.2122"></path>
+<polygon fill="#000000" stroke="#000000" points="594.7328,-436.1558 591.5215,-426.0593 587.7356,-435.9546 594.7328,-436.1558"></polygon>
+</g>
+<!-- nonfelony -->
+<g id="node29" class="node">
+<title>nonfelony</title>
+<text text-anchor="middle" x="513.006" y="-474.6" font-family="Helvetica" font-size="14.00" fill="#000000">non-felonies</text>
+</g>
+<!-- nonfelony&#45;&gt;preliminaryHearing -->
+<g id="edge21" class="edge">
+<title>nonfelony-&gt;preliminaryHearing</title>
+<path fill="none" stroke="#000000" d="M512.7291,-470.346C511.9865,-446.9133 510.006,-379.1437 510.006,-322.8 510.006,-322.8 510.006,-322.8 510.006,-192 510.006,-153.0416 527.7817,-110.1177 539.0178,-86.8766"></path>
+<polygon fill="#000000" stroke="#000000" points="542.1505,-88.4374 543.4977,-77.9285 535.8912,-85.3036 542.1505,-88.4374"></polygon>
+</g>
+<!-- grandJuryFindsProbableCause -->
+<g id="node35" class="node">
+<title>grandJuryFindsProbableCause</title>
+<text text-anchor="middle" x="692.006" y="-327" font-family="Helvetica" font-size="14.00" fill="#000000">Grand jury finds</text>
+<text text-anchor="middle" x="692.006" y="-310.2" font-family="Helvetica" font-size="14.00" fill="#000000">probable cause</text>
+</g>
+<!-- grandJury&#45;&gt;grandJuryFindsProbableCause -->
+<g id="edge25" class="edge">
+<title>grandJury-&gt;grandJuryFindsProbableCause</title>
+<path fill="none" stroke="#000000" d="M611.287,-392.5412C626.5046,-379.3932 647.9204,-360.89 664.8694,-346.2461"></path>
+<polygon fill="#000000" stroke="#000000" points="667.5055,-348.5939 672.7842,-339.4076 662.9291,-343.297 667.5055,-348.5939"></polygon>
+</g>
+<!-- grandJuryNoProbableCause -->
+<g id="node36" class="node">
+<title>grandJuryNoProbableCause</title>
+<text text-anchor="middle" x="583.006" y="-335.4" font-family="Helvetica" font-size="14.00" fill="#000000">Grand jury does</text>
+<text text-anchor="middle" x="583.006" y="-318.6" font-family="Helvetica" font-size="14.00" fill="#000000">not find</text>
+<text text-anchor="middle" x="583.006" y="-301.8" font-family="Helvetica" font-size="14.00" fill="#000000">probable cause</text>
+</g>
+<!-- grandJury&#45;&gt;grandJuryNoProbableCause -->
+<g id="edge27" class="edge">
+<title>grandJury-&gt;grandJuryNoProbableCause</title>
+<path fill="none" stroke="#000000" d="M590.2707,-392.5412C589.2593,-382.8319 587.9437,-370.2023 586.7105,-358.363"></path>
+<polygon fill="#000000" stroke="#000000" points="590.1749,-357.8391 585.6576,-348.2555 583.2126,-358.5644 590.1749,-357.8391"></polygon>
+</g>
+<!-- complaint&#45;&gt;arraignment -->
+<g id="edge15" class="edge">
+<title>complaint-&gt;arraignment</title>
+<path fill="none" stroke="#000000" d="M334.2251,-86.4409C341.011,-109.8673 352.006,-153.7292 352.006,-192 352.006,-478.8 352.006,-478.8 352.006,-478.8 352.006,-507.2807 355.117,-516.3634 371.006,-540 379.0467,-551.9614 391.2471,-562.3795 402.018,-570.1123"></path>
+<polygon fill="#000000" stroke="#000000" points="400.3689,-573.2234 410.6066,-575.9511 404.3044,-567.4344 400.3689,-573.2234"></polygon>
+</g>
+<!-- arraignmentProceed&#45;&gt;felony -->
+<g id="edge18" class="edge">
+<title>arraignmentProceed-&gt;felony</title>
+<path fill="none" stroke="#000000" d="M558.2809,-522.8812C563.5931,-515.5 571.3615,-504.706 577.8814,-495.6469"></path>
+<polygon fill="#000000" stroke="#000000" points="580.8472,-497.5177 583.8478,-487.3566 575.1656,-493.4286 580.8472,-497.5177"></polygon>
+</g>
+<!-- arraignmentProceed&#45;&gt;nonfelony -->
+<g id="edge20" class="edge">
+<title>arraignmentProceed-&gt;nonfelony</title>
+<path fill="none" stroke="#000000" d="M545.5659,-522.8812C540.1139,-515.5 532.1411,-504.706 525.4497,-495.6469"></path>
+<polygon fill="#000000" stroke="#000000" points="528.0829,-493.3208 519.3262,-487.3566 522.4523,-497.4798 528.0829,-493.3208"></polygon>
+</g>
+<!-- sentencing&#45;&gt;appeal -->
+<g id="edge35" class="edge">
+<title>sentencing-&gt;appeal</title>
+<path fill="none" stroke="#000000" d="M904.006,-522.8812C904.006,-515.9613 904.006,-506.042 904.006,-497.3645"></path>
+<polygon fill="#000000" stroke="#000000" points="907.5061,-497.3566 904.006,-487.3566 900.5061,-497.3566 907.5061,-497.3566"></polygon>
+</g>
+<!-- grandJuryFindsProbableCause&#45;&gt;indictment -->
+<g id="edge26" class="edge">
+<title>grandJuryFindsProbableCause-&gt;indictment</title>
+<path fill="none" stroke="#000000" d="M692.006,-305.9518C692.006,-295.6702 692.006,-282.5097 692.006,-271.906"></path>
+<polygon fill="#000000" stroke="#000000" points="695.5061,-271.6604 692.006,-261.6604 688.5061,-271.6604 695.5061,-271.6604"></polygon>
+</g>
+<!-- grandJuryDismissed -->
+<g id="node37" class="node">
+<title>grandJuryDismissed</title>
+<text text-anchor="middle" x="582.006" y="-249" font-family="Helvetica" font-size="14.00" fill="#000000">Case dismissed</text>
+</g>
+<!-- grandJuryNoProbableCause&#45;&gt;grandJuryDismissed -->
+<g id="edge28" class="edge">
+<title>grandJuryNoProbableCause-&gt;grandJuryDismissed</title>
+<path fill="none" stroke="#000000" d="M582.6393,-297.2787C582.518,-288.8332 582.3853,-279.6012 582.2729,-271.7781"></path>
+<polygon fill="#000000" stroke="#000000" points="585.7698,-271.5289 582.1264,-261.5802 578.7705,-271.6295 585.7698,-271.5289"></polygon>
+</g>
+<!-- convictionUpheld&#45;&gt;habeas -->
+<g id="edge41" class="edge">
+<title>convictionUpheld-&gt;habeas</title>
+<path fill="none" stroke="#000000" d="M1035.8572,-400.7583C1062.2594,-385.7507 1117.5651,-354.3138 1149.2884,-336.2816"></path>
+<polygon fill="#000000" stroke="#000000" points="1151.3543,-339.1333 1158.3183,-331.1488 1147.8951,-333.0477 1151.3543,-339.1333"></polygon>
+</g>
+<!-- retrial&#45;&gt;trial -->
+<g id="edge43" class="edge">
+<title>retrial-&gt;trial</title>
+<path fill="none" stroke="#000000" d="M906.8927,-400.5998C911.5633,-386.6843 920.8736,-358.9463 927.0211,-340.6307"></path>
+<polygon fill="#000000" stroke="#000000" points="930.3523,-341.7053 930.2163,-331.1113 923.7161,-339.4778 930.3523,-341.7053"></polygon>
+</g>
+<!-- cert -->
+<g id="node43" class="node">
+<title>cert</title>
+<text text-anchor="middle" x="1136.006" y="-187.8" font-family="Helvetica" font-size="14.00" fill="#000000">Petition SCOTUS</text>
+</g>
+<!-- habeasDenied&#45;&gt;cert -->
+<g id="edge45" class="edge">
+<title>habeasDenied-&gt;cert</title>
+<path fill="none" stroke="#000000" d="M1136.006,-244.6904C1136.006,-235.9211 1136.006,-221.9689 1136.006,-210.6243"></path>
+<polygon fill="#000000" stroke="#000000" points="1139.5061,-210.4373 1136.006,-200.4373 1132.5061,-210.4374 1139.5061,-210.4373"></polygon>
+</g>
+<!-- vacatur&#45;&gt;release -->
+<g id="edge39" class="edge">
+<title>vacatur-&gt;release</title>
+<path fill="none" stroke="#000000" d="M851.006,-183.587C851.006,-164.0215 851.006,-115.0819 851.006,-88.1279"></path>
+<polygon fill="#000000" stroke="#000000" points="854.5061,-88.0719 851.006,-78.0719 847.5061,-88.072 854.5061,-88.0719"></polygon>
+</g>
+</g>
+</svg>

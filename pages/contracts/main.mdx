@@ -1,0 +1,704 @@
+# The Law of Contracts
+
+1. [Preliminaries](#preliminaries)
+	1. [Unilateral vs. Bilateral Contracts](#unilateral-vs-bilateral-contracts)
+2. [UCC v. Common Law](#ucc-v-common-law)
+3. [Formation of Contracts](#formation-of-contracts)
+	1. [Mutual Assent](#mutual-assent)
+		1. [Offer](#offer)
+			1. [Offeror's Willingness](#offerors-willingness)
+		2. [Offeree's Reasonable Expectation](#offerees-reasonable-expectation)
+		3. [Essential Terms](#essential-terms)
+			1. [Essential Terms Under Common Law](#essential-terms-under-common-law)
+			2. [Essential Terms Under the UCC](#essential-terms-under-the-ucc)
+				1. [Exception: Requirement Contracts](#exception-requirement-contracts)
+				2. [Exception: Output Contracts](#exception-output-contracts)
+		4. [Pseudo-offers](#pseudo-offers)
+			1. [Offers to the Public-at-large](#offers-to-the-public-at-large)
+			2. [Advertisements](#advertisements)
+		5. [Terminating Offers](#terminating-offers)
+			1. [Terminating Offers Before Acceptance](#terminating-offers-before-acceptance)
+			2. [Irrevocable Offers](#irrevocable-offers)
+				1. [Option Contract](#option-contract)
+				2. [Firm Offer](#firm-offer)
+				3. [Offeree Has Started Performance](#offeree-has-started-performance)
+	2. [Acceptance](#acceptance)
+		1. [When Acceptance Occurs](#when-acceptance-occurs)
+			1. [Mailbox Rule](#mailbox-rule)
+		2. [Silent Acceptance](#silent-acceptance)
+		3. [Acceptance: Objective Test](#acceptance-objective-test)
+	3. [Counteroffer vs. Acceptance](#counteroffer-vs-acceptance)
+		1. [Common Law: Mirror-image Rule](#common-law-mirror-image-rule)
+		2. [UCC § 2-207: Battle of the Forms, Issue 1](#ucc--2-207-battle-of-the-forms-issue-1)
+		3. [UCC § 2-207(2): Battle of the Forms, Issue 2](#ucc--2-2072-battle-of-the-forms-issue-2)
+		4. [Additional Terms v. Different Terms](#additional-terms-v-different-terms)
+		5. [Knockout Rule](#knockout-rule)
+	4. [Consideration](#consideration)
+		1. [Legal Detriment](#legal-detriment)
+		2. [Gifts](#gifts)
+		3. [Conditional Gifts](#conditional-gifts)
+		4. [Preexisting Legal Duties](#preexisting-legal-duties)
+		5. [Past Consideration](#past-consideration)
+		6. [Nominal Consideration](#nominal-consideration)
+		7. [Illusory Promise](#illusory-promise)
+		8. [Common Law: Contract Modification](#common-law-contract-modification)
+			1. [Preexisting Duty Rule](#preexisting-duty-rule)
+		9. [UCC: Contract Modification](#ucc-contract-modification)
+		10. [Consideration Escape Hatches](#consideration-escape-hatches)
+			1. [Promissor Estoppel](#promissor-estoppel)
+			2. [Quasi-contract](#quasi-contract)
+	5. [Moral Obligation & Subsequent Promise](#moral-obligation--subsequent-promise)
+4. [Defenses to Contract Formation](#defenses-to-contract-formation)
+	1. [Incapacity Defense: Infancy](#incapacity-defense-infancy)
+		1. [Minors Entering into Contracts without an Adult](#minors-entering-into-contracts-without-an-adult)
+		2. [Minors Entering into Contracts with an Adult](#minors-entering-into-contracts-with-an-adult)
+	2. [Incapacity Defense: Mental Illness](#incapacity-defense-mental-illness)
+	3. [Incapacity Defense: Intoxication](#incapacity-defense-intoxication)
+5. [Formation Defense: Mistake](#formation-defense-mistake)
+	1. [Mutual Mistake](#mutual-mistake)
+	2. [Unilateral Mistake](#unilateral-mistake)
+	3. [Assuming the Risk of Mistake](#assuming-the-risk-of-mistake)
+6. [Formation Defense: Misrepresentation](#formation-defense-misrepresentation)
+7. [Formation Defense: Duress by Threat](#formation-defense-duress-by-threat)
+8. [Formation Defense: Duress by Improper Threat](#formation-defense-duress-by-improper-threat)
+9. [Formation Defense: Undue Influence](#formation-defense-undue-influence)
+
+## Preliminaries
+- A contract is a legally enforceable agreement between two or more parties where one party promises to do, or refrain from doing, an act, in exchange for another party's promise to do, or refrain from doing, an act.
+- Example:
+	- A promises to transfer land 𝐿 to B if B promises to pay 𝑥 dollars.
+	- A promises to pay 𝑚 dollars if B promises to fill out A's tax forms correctly.
+- There are two sides to every contract:
+	1. The __offeror__ — the party that makes an offer, and
+	2. The __offeree__ - the party that accepts the offer
+
+### Unilateral vs. Bilateral Contracts
+- A _unilateral contract_ is a contract where one party makes a promise (e.g., a promise to pay) in exchange for the other party performing an act (e.g., some service).
+	- I.e., only one side makes a promise, and the other party can decide or decide not to perform.
+	- Example: 𝐴 promises to pay 𝐵 a total of 𝑥 dollars if 𝐵 delivers a package. If 𝐵 delivers it, 𝐴 must pay 𝐵. If 𝐵 does not, there are no consequences for 𝐵; they just won't get paid 𝑥.
+- A _bilateral contract_ is a contract where one party makes a promise in exchange for the other's promise.
+	- I.e., both sides make a promise.
+	- Example: 𝐴 promises to buy a house ℎ within 1 year in exchange for 𝐵's promise not to sell it to anyone else. If 𝐴 fails to buy the house within 1 year, 𝐴 can be sued under contract, and if 𝐵 sells the house to anyone other than 𝐴 within the year, 𝐵 can be sued under contract.
+
+## UCC v. Common Law
+- The first step to analyzing any contract issue is answering this question:
+  - Does the UCC or common law apply?
+1. IF the contract is for:
+	- [ ] _only services_;
+	- [ ] _only real estate_; OR
+	- [ ] _services and real estate_
+	- => common law applies
+2. IF the contract is
+	- [ ] _only for goods_
+	- => UCC Article 2 applies
+3. IF the contract is for:
+	- [ ] _services + goods_;
+	- [ ] _real estate + goods_; OR
+	- [ ] _real estate + services + goods_
+	- THEN:
+		1. => the common law and the UCC _cannot_ both apply
+		2. => the contract's predominant purpose determines whether the UCC or common law applies.
+			- The contract's predominant purpose is determine by which valuable plays the biggest role in the contract.
+			- Example:
+				- If the services play a bigger role than the goods (e.g., the goods would've been useless without the services), then the common law.
+## Formation of Contracts
+
+- __MConDef__: A contract is valid iff:
+  1. [ ] there is __mutual assent__,
+  2. [ ] there is __consideration__, <AND/>
+  3. [ ] there are no __defenses to formation__ that would invalidate the contract.
+
+### Mutual Assent
+- There mutual assent iff:
+  1. [ ] there was a valid offer by the offeror, <AND/>
+  2. [ ] there was a valid acceptance by the offeree
+
+#### Offer
+- An offeror makes a valid offer iff:
+  1. [ ] __Offeror's Willingness__: The offeror was objectively willing to enter into a contract,
+	2. [ ] __Offeree's Reasonable Expectation__: The offeree had a reasonable expectation that the offeror is willing to enter into the contract, <AND/>
+	3. [ ] __Essential Terms__: The offer's essential terms are certain and definite.
+
+##### Offeror's Willingness
+- To determine if an offeror was objectively willing, courts use the __objective test__:
+- Objective willingness is determined by perceptible words and actions, not sujective hidden intentions.
+- Example:
+	- 𝐴 makes an offer to sell a house to 𝐵 as a joke, telling 𝐵 how happy 𝐵 and his wife would be with the home, writing silly conditions for the house's sale on a piece of paper.
+	- If those conditions are detailed enough, a court can find objective willingness.
+#### Offeree's Reasonable Expectation
+- To determine if the offeree had a reasonable expectation, courts ask the following questions:
+	1. __Promise__ .
+		- Did the offeror express a promise, undertaking, or commitment to enter into a contract?
+	3. __Certainty__.
+		- Were the [essential terms](#essential-terms) of the agreement certain and definite?
+	4. __Communication__.
+		- Were the terms and promises communicated to the offeree?
+
+#### Essential Terms
+- What counts as the contract's essential terms depends on whether the UCC or common law appleis.
+
+##### Essential Terms Under Common Law
+- Under common law, an offer is valid iff it contains the _essential terms_:
+	1. [ ] identification of the parties (who's entering into the contract),
+	2. [ ] identification of the contract's subject (what's the contract for),
+	3. [ ] identification of the quantity (how many acres of land/how many hours of services)
+	4. [ ] identification of the price (what will be paid for the quantity)
+
+##### Essential Terms Under the UCC
+- Unlike common law, the UCC does not require contracts to specify price.
+- Under the UCC, the essential terms are:
+	1. [ ] identification of the parties,
+	2. [ ] identification of the contract's subject, AND
+	3. [ ] identification of the quantity
+
+###### Exception: Requirement Contracts
+- A __requirement contract__ is a contract where the seller agrees to sell as much as the buyer would require. As such, these contracts do not satisfy the quantity prong.
+- The UCC, however, recognizes these contracts as valid.
+
+###### Exception: Output Contracts
+- An __output contract__ is a contract where the seller agrees to sell their entire product — however much that might be — to the buyer.
+- These contracts also do not satisfy the quantity prong, but the UCC recognizes them as valid.
+
+#### Pseudo-offers
+- Some communications may look like offers, when they are not. However, under certain conditions, they can be construed as offers.
+
+##### Offers to the Public-at-large
+- Generally, an offer must be directed at a specific offeree.
+- The limited exceptions are __contest offers__ and __reward offers__ promising to reward anyone who accomplishes a particular task.
+
+##### Advertisements
+- Ads are generally considered an __invitation to deal__ rather than an offer.
+- This is because advertisements usually to do not give the offeree the power to accept.
+- The exception:
+	- If an advertisement is:
+		1. [ ] extremely specific, and
+		2. [ ] leaves nothing open to negotiation,
+	- then the ad may constitute an offer.
+
+#### Terminating Offers
+- There are two cases for terminating offers:
+	1. Terminating _before_ acceptance, and
+	2. Termainating _after_ acceptance
+
+##### Terminating Offers Before Acceptance
+- IF:
+	1. [ ] acceptance has not occured, AND
+	2. [ ] any of the following conditions are true:
+		1. [ ] the offeror revokes the offer by express communication to the offeree
+			- EXCEPTION: [Irrevocable Offers](#irrevocable-offers).
+		2. [ ] the offeree learns that the offeror has taken an action that is absolutely inconsistent with a continuing ability to contract,
+		3. [ ] the offeree rejects the offer by express communication to the offeror,
+		4. [ ] the offeree expressly communicates a counteroffer to the offeror,
+		5. [ ] the offeror dies or otherwise becomes incapacitated,
+		6. [ ] a reasonable amount of time passes without acceptance (usually weeks)
+		7. [ ] the offer's subject matter becoms illegal or is destroyed,
+	<AND/>
+	3. [ ] no new offers are made
+	- THEN the offer is terminated
+
+##### Irrevocable Offers
+- IF:
+	1. [ ] the offer is for an option contract,
+	2. [ ] the offer is a firm offer,
+	3. [ ] if the offer is a unilateral offer to contract:
+		- [ ] the offerree has started performance,
+	<OR/>
+	4. [ ] the offeree reasonably and detrimentally relies on the offer in a foreseeable manner
+- THEN:
+	- the offeror CANNOT revoke the offer.
+- ELSE:
+	- the offeror can revoke the offer
+
+###### Option Contract
+- An __option contract__ is a contract where:
+	1. [ ] the offeree gives consideration
+	2. [ ] in exchange for
+	3. [ ] the offeror's promise to keep the offer open
+
+###### Firm Offer
+- Under the UCC, a merchant (someone who regularly deals in the type of good at issue) can make a __firm offer__ to buy or sell goods.
+- For an offer to be a firm offer, all the following conditions must be met:
+	1. [ ] the offer is in writing
+	2. [ ] the offer contains the offeror's explicit promise not to revoke the offer, <AND/>
+	3. [ ] the offer is signed by the offeror
+
+###### Offeree Has Started Performance
+- A __unilateral offer__ to contract cannot be revoked by the offeror if the offeree has started performance.
+
+### Acceptance
+
+- __Acceptance__ is the manifestation of willingness to enter into the agreement by the offeree.
+- Necessary conditions for acceptance:
+  1. [ ] the offeror must communicate the offer to the offeree
+  2. [ ] the offer must be _specifically directed_ to the offeree
+- The offeror is the _master of the offer_, meaning that the offeree must accept the offer under the offeror's rules for acceptance.
+  - i.e., the offeree must do what the offeror says they have to do to accept the offer.
+
+#### When Acceptance Occurs
+- IF:
+	- [ ] the contract is a bilateral contract,
+	- THEN: acceptance occurs when the offeree begins performing.
+- ELSE IF:
+	- [ ] the contract is a __unilateral contracts__
+	- THEN:
+		- the start of performance only makes the offer irrevocable
+		- acceptance occurs when the offeree finishes performing
+
+##### Mailbox Rule
+- IF:
+	- an acceptance is sent by:
+		1. [ ] mail,
+		2. [ ] email, or
+		3. [ ] fax,
+	- THEN: acceptance occurs at the moment of dispatch
+	- EXCEPT:
+		- the rule does not apply if any of the conditions are true:
+			- [ ] the offeree uses the wrong address of has improper postage,
+			- [ ] the offeror expressly states that acceptance is valid only upon receipt,
+			- [ ] the acceptance relates to an option contract,
+			- [ ] the offeror sends a termination letter _before_ the acceptance letter,
+				- If the offeree sends a counteroffer/rejection and a moment later sends an acceptance, whichever letter the offeror receives first controls.
+				- If the offeree sends an acceptance and a moment later sends a counteroffer/rejection, then the acceptance letter is effective at the moment of dispatch.
+			<OR/>
+			- [ ] the offeror detrimentally relies on a termination _before_ she receives the acceptance letter
+
+#### Silent Acceptance
+
+- Generally, silence is not enough.
+- EXCEPTION: The offeror and offeree have a history of contracting with one another, and silence served as acceptance.
+
+#### Acceptance: Objective Test
+
+- To determine if acceptance is valid, courts employ an __objective test__.
+- Outward appearances and actions are determinative, rather than hidden intentions.
+
+### Counteroffer vs. Acceptance
+- If the offeree responds to an offer with a counteroffer, then:
+	1. the offer rejects the original offer,
+	2. the original offer is terminated, AND
+	3. a new offer is created for the original offeror to accept
+
+#### Common Law: Mirror-image Rule
+- Under common law:
+	- IF:
+		1. [ ] the terms in the acceptance
+		2. [ ] do not match the terms of the offer
+	- THEN:
+		- the acceptance is not an acceptance
+		- the acceptance is a counteroffer
+
+#### UCC § 2-207: Battle of the Forms, Issue 1
+- Under the UCC §2-207(1), acceptance does _not_ have to mirror the offer.
+- Instead:
+	- IF:
+		1. [ ] the terms in the acceptance
+		2. [ ] do not match the terms of the offer
+		<AND/>
+		3. [ ] a definite and reasonable expression of acceptance or written confirmation
+		4. [ ] is sent within a reasonable amount of time AND
+		5. [ ] acceptace is not expressly made on the condition that
+		6. [ ] the additional or different terms must be assented to
+	- THEN:
+		- the acceptance operates as a valid acceptance, subject to UCC § 2-207(2)
+	- ELSE:
+		- the acceptance is a counteroffer
+
+#### UCC § 2-207(2): Battle of the Forms, Issue 2
+- FOR each _additional_ term in the offer:
+	- IF:
+		1. [ ] the offeror and offeree are merchants
+		<AND/>
+		2. [ ] all the conditions below are true:
+			1. [ ] the initial offer does not expressly limit acceptance to the additional terms,
+			2. [ ] the additional terms do not _materially alter_ the deal
+			3. [ ] the offeror does not object to the additional terms
+			<AND/>
+			4. [ ] if the offeror objects to the additional terms, does not object within a reasonable amount of time
+	- THEN:	 
+		- the additional terms govern the contract
+#### Additional Terms v. Different Terms
+- There is a difference between additional terms and different terms.
+- IF the term:
+	1. [ ] is not included in the original offer AND
+	2. [ ] the term conflicts with the original offer's terms
+	- THEN => the term is a _different term_.
+- IF the term:
+	1. [ ] is not included in the original offer AND
+	2. [ ] does not conflict with the original offer's terms
+	- THEN => the term is an _additional term_.
+
+#### Knockout Rule
+- FOR each _different term_ in the offer:
+	- [ ] the different term
+	- [ ] cancels the original term
+	<AND/>
+	- [ ] the original term
+	- [ ] cancels the different term
+- FOR each gap resulting from the knockout rule,
+	- The court will fill the gap with a UCC gap filler
+
+### Consideration
+- To form a traditional, enforceable contract, the agreement must be supported by consideration.
+- Consideration occurs ONLY IF:
+	1. [ ] there is a transfer of legal value:
+		- [ ] the promisee incurs a legal detriment, OR
+		- [ ] the promisor receives a legal benefit
+	<AND/>
+	2. [ ] the transfer occurs in a bargained-for-exchange:
+		1. the promise induces the detriment, <AND/>
+		2. the deteriment induces the promise
+
+#### Legal Detriment  
+- The most common forms of legal detriment:
+	1. [ ] promising to do something the party has no prior legal duty to do,
+	2. [ ] performing an action that the party is not otherwise obligated to undertake, or
+	3. [ ] refraining from or promising to refrain from exercising a legal right which the party is otherwise entitled to exercise
+	4. [ ] promising not to sue, provided:
+		- [ ] the party promising not to sue has a good faith belief
+		- [ ] in the validity of the claim
+
+#### Gifts
+- Gifts are _not_ consideration.
+- Example:
+  - 𝐴 promises to give 𝐵 their truck for free.
+  - 𝐵 incurs no legal detriment.
+  - 𝐴's promise is not induced by any action of 𝐵.
+  - This is called a __gift promise__, not consideration.
+
+#### Conditional Gifts
+- Conditional gifts are _not_ consideration.
+- Example:
+	- 𝐴 promises to give 𝐵 their truck for free if 𝐵 will drive across state lines to pick up the truck from 𝐴's house.
+	- 𝐴's promise to give 𝐵 their truck is not induced by 𝐵 coming to pick the truck up.
+	- Thus, there is no consideration, and there is no contract.
+
+#### Preexisting Legal Duties
+- Preexisting legal duties are _not_ consideration.
+- Example:
+	- 𝐴 promises to pay 𝐵's rent, food, and tuition if 𝐵 stops selling heroin.
+	- 𝐵 already has a preexisting legal duty not to sell heroin.
+	- Therefore, 𝐵 incurs no legal detriment from ceasing her heroin sales.
+	- There is no consideration, and no contract.
+
+#### Past Consideration
+- Past consideration is _not_ consideration.
+- EXAMPLE:
+	- 𝐴's robotic chainsaw malfunctions, swinging its chainsaws wildly.
+	- 𝐵, just in time, pulls 𝐴, saving him.
+	- Grateful, 𝐴 promises to pay 𝐵 𝑥 dollars.
+	- 𝐵's detriment (saving 𝐴's life) was not induced by 𝐴's promise.
+	- There is no consideration, and therefore, no contract.
+
+#### Nominal Consideration
+- Nominal consideration is _not_ consideration.
+- EXAMPLE:
+	- 𝐴 and 𝐵 are cousins.
+	- 𝐴 wants to give 𝐵 her electric car, valued at 𝑥 dollars, for 𝐵's birthday.
+	- Trying to make an enforceable contract, 𝐴 "sells" 𝐵 the the electric car for \$1 as consideration.
+	- 𝐴 is not induced to give 𝐵 the truck for \$1.
+	- There is no consideration, and therefore, no contract.
+
+#### Illusory Promise
+- An illusory promise is _not_ consideration.
+- EXAMPLE:
+	- 𝐴 promises to buy 𝐵's robot if "𝐴 feels like it."
+	- 𝐴 is not committing to the deal — she is making an illusory promise.
+	- There is no consideration, and therefore, no contract.
+
+#### Common Law: Contract Modification
+- Under common law:
+	- IF:
+		- [ ] either party modifies the contract
+	- THEN:
+		- there must be consideration supporting the modification
+	- ELSE:
+		- the modification is invalid and not a part of the contract
+
+##### Preexisting Duty Rule
+- FOR all contract modifications under common law:
+	- IF:
+		- [ ] a promise to do 𝑥,
+		- [ ] already made by one of the parties
+		- [ ] under the original, unmodified contract
+	- does not count as consideration
+- NOTE: This is a source for a common slumlord trick:
+	- 𝐴 signs a lease with slumlord 𝑆.
+	- 𝐴 cannot pay rent (\$800) on a particular month.
+	- 𝐴 and 𝑆 agree to lessen the rent to (\$500).
+	- 𝑆 can sue 𝐴 to collect the \$800.
+	- Why? Because there was no consideration for the modification.
+	- 𝐴 had a preexisting legal duty to pay the \$800.
+
+#### UCC: Contract Modification
+- Under the UCC, there is no consideration requirement.
+- IF:
+	1. [ ] an existing contract is modified, AND
+	2. [ ] the modification is made in good faith
+	- THEN:
+		- the modification is valid
+#### Consideration Escape Hatches
+- There are several ways to save a contract if the consideration element is not met.
+
+##### Promissor Estoppel
+- IF:
+	1. [ ] the promisor makes a promise without consideration
+	2. [ ] the promisor should reasonably expect:
+		- [ ] action from the promisee; OR
+		- [ ] forebearance from the promisee
+	3. [ ] the promise does not induce such action or forebearance to the promisee's detriment, AND
+	4. [ ] injustice will result if the promise is not enforced
+- THEN:
+	- the promisor's promise can be enforced under the _doctrine of promissory estoppel_.
+
+##### Quasi-contract
+- IF:
+	1. [ ] the promisor makes a promise without consideration
+	2. [ ] the promisee's actions confer a _measurable benefit_ on the promisor
+	3. [ ] the promisee reasonably expected to get paid
+	4. [ ] AND it would be unfair to let the promisor keep the benefit without paying
+	- THEN:
+		- the promisor's promise may be enforced as a quasi-contract
+		- the promisee is only entitled to restitution damages
+			- (an amount equal to the economic benefit that the plaintiff conferred on the defendant)
+
+### Moral Obligation & Subsequent Promise
+- _This rule exists in a minority of jurisdictions._
+- IF:
+	1. [ ] the promisor makes makes promise to the promisee
+	2. [ ] in circumstances where a strong moral obligation is involved
+	- THEN: the promisor's promise can be enforced
+- EXAMPLE:
+	- 𝐴's car catches on fire.
+	- 𝐵 rushes in and pulls 𝐴 out of the wreck.
+	- Grateful, 𝐴 promises to pay 𝐵 a total of 𝑥 dollars.
+	- 𝐴's promise can be enforced.
+
+## Defenses to Contract Formation
+- The following are defenses to contract formation.
+- I.e., use these rules to argue that a contract was not formed.
+- [ ] a party does not have capacity to enter into a contract
+	- commonly through:
+		- infancy,
+		- mental illness, and
+		- intoxication
+- THEN:
+	- no contract was formed
+
+### Incapacity Defense: Infancy
+- There are two common conditions of minors enter into contracts:
+	1. A minor enters into the contract without an adult.
+	2. A minor enters into the contract with an adult.
+
+#### Minors Entering into Contracts without an Adult
+- IF:
+	1. [ ] a party to the contract (promisor or promisee)
+	2. [ ] is below the age of 18 (a minor)
+	<AND/>
+	3. [ ] the party enters into the contract _WITHOUT_ an adult
+	<AND/>
+	3. [ ] a statute does not provide otherwise
+- THEN:
+	1. before the day the party turns 18, only voidable contractual duties may be enforced against the party
+
+#### Minors Entering into Contracts with an Adult
+- IF:
+	1. [ ] a party to the contract (promisor or promisee)
+	2. [ ] is below the age of 18 (a minor)
+	<AND/>
+	3. [ ] the party enters into the contract _WITH_ an adult
+	<AND/>
+	3. [ ] a statute does not provide otherwise
+- THEN:
+	1. before the day the party turns 18, only voidable contractual duties may be enforced against the party
+	<AND/>
+	2. the minor can choose to either:
+		1. disaffirm the contract and avoid liability under it
+			- CONSEQUENCES:
+				- the minor must return anything that:
+					1. [ ] they received under the contract
+					2. [ ] still remains in their possession at
+					3. [ ] the time of disaffirmance
+		<OR/>
+		2. affirm the contract and hold the adult party liable under it
+			- NOTE:
+				- the minor can affirm the contract expressly or implicitly by failing to disaffirm the contract within a reasonable amount of time after turning 18.
+
+### Incapacity Defense: Mental Illness
+- ∀ parties to the contract (offeror || offeree):
+	- IF:
+		1. [ ] party 𝐴 cannot understand
+		2. [ ] in a reasonable manner
+		3. [ ] the nature and consequences of the transaction
+
+		||
+
+		1. [ ] party 𝐴 cannot act in a reasonable manner
+		2. [ ] in relation to the transaction
+		3. [ ] the party 𝐵 has reason to know of
+		4. [ ] the party's condition
+	- THEN:
+		- 𝐴 incurs only voidable contractual duties by entering into a transaction.
+		- 𝐴 can avoid liability by:
+			- [ ] disaffirming the contract when they are lucid
+			||
+			- [ ] disaffirming the contract through their legal representative
+
+### Incapacity Defense: Intoxication
+- ∀ parties to the contract (offeror || offeree):
+	- IF:
+		1. [ ] party 𝐴 is intoxicated &&
+		2. [ ] party 𝐵 has reason to know that:
+			- [ ] 𝐴 cannot understand
+			- [ ] the nature and consequences of the transaction
+			- [ ] in a reasonable manner
+			- [ ] because they are intoxicated
+
+			||
+
+			- [ ] 𝐴 cannot act in a reasonable manner
+			- [ ] in relation to the transaction
+			- [ ] because they are intoxicated
+	- THEN:
+		- 𝐴 incurs only voidable contractual duties by entering into the transaction.
+		- 𝐴 can avoid liability by:
+			- [ ] acting promptly upon recovery to disaffirm the contract
+
+			&&
+
+			- [ ] returning any value received, if possible
+
+## Formation Defense: Mistake
+- _Mistake_ is a defense against contract formation.
+- The defense's core premise: One or more of the contract's parties got the facts wrong, and the contract wouldn't exist in the first place if they got the facts right.
+- The argument generally takes two forms:
+	1. The _mutual mistake_ (when both parties are mistaken about a fact),
+	2. the _unilateral mistake_ (when only one of the parties is mistaken about a fact).
+
+### Mutual Mistake
+- IF:
+	1. [ ] both parties are mistaken about a fact
+	2. [ ] that relates to a basic assumption of the contract
+
+	&&
+
+	3. [ ] the mistake has a material impact on the deal
+
+	&&
+
+	4. [ ] the impacted party did not assume the risk of mistake
+- THEN:
+	- no contract was formed
+
+### Unilateral Mistake
+- IF:
+	1. [ ] one of the parties is mistaken about a fact
+	2. [ ] at the time the deal is made
+	3. [ ] the mistake relates to a basic assumption of the contract
+	4. [ ] the mistake has a material impact on the deal
+	5. [ ] the impacted party did not assume the risk of mistake
+
+	&&
+
+	6. [ ] one of these conditions is true:
+		- [ ] the mistake would make the contract unconscionable
+		- [ ] the other party knew of the mistake
+		- [ ] the other party had reason to know of the mistake
+
+		||
+
+		- [ ] the other party caused the mistake
+
+### Assuming the Risk of Mistake
+- A party assumes the risk of mistake IF:
+	- [ ] at the time the contract is made
+	- [ ] the party is aware that
+	- [ ] they only have limited knowledge
+	- [ ] about the mistaken fact(s)
+	- [ ] but treats their knowledge as sufficient
+
+	||
+
+	- [ ] the risk is allocated to the party
+	- [ ] by agreement of the parties ("as is" contracts)
+
+## Formation Defense: Misrepresentation  
+- Def: A misrepresentation is a statement that, at the time of contracting, is not true.
+
+- IF:
+	1. [ ] at the time of contracting
+	2. [ ] a party makes a false statement
+	3. [ ] about a _present fact_ (not opinion)
+	4. [ ] that is:
+		- [ ] material
+		<OR/>
+		- [ ] faudulent
+	<AND/>
+	5. [ ] the statement is made under circumstances where
+	6. [ ] it is justifiable to rely on the representation
+- THEN:
+	- no contract was formed
+
+## Formation Defense: Duress by Threat
+- LET:
+	- 𝐴,𝐵 ∈ \{ parties to a contract \}
+- IF:
+	1. [ ] 𝐴 compels 𝐵 to enter the contract   
+	2. [ ] by threatening to inflict physical harm
+- THEN:
+	- No contract was formed.
+
+## Formation Defense: Duress by Improper Threat
+- LET:
+	- 𝐴,𝐵 ∈ \{ parties to a contract \}
+- IF:
+	1. [ ] 𝐴 compels 𝐵 to enter the contract
+	2. [ ] through any one of the following means:
+		- [ ] threatening to commit an act against 𝐵 that:
+			- [ ] would constitute a tort
+			- [ ] would constitute a crime
+			- [ ] would constitute a tort if property were taken
+			- [ ] would constitute a crime if property were taken
+		- [ ] threatening to criminally prosecute
+		- [ ] threatning to:
+			1. [ ] use civil process 
+			<AND/>
+			2. [ ] the threat is made in bad faith
+		- [ ] threatening to commit act against 𝐵 that:
+			1. [ ] would breach the duty of good faith and fair dealing
+			2. [ ] under a contract with 𝐴
+		- [ ] threatening to commit an act against 𝐵 that:
+			1. [ ] would result in an exchange on unfair terms
+			<AND/>
+			2. [ ] any one of the following:
+				1. [ ] would harm 𝐵 <AND/>
+				2. [ ] would not significantly benefit 𝐴
+
+				<OR/>
+
+				- [ ] the effectiveness of the threat in inducing assent
+				- [ ] is significantly increased
+				- [ ] by prior unfair dealing by 𝐴
+
+				<OR/>
+
+				- [ ] what is threatened is otherwise a use of power
+				- [ ] for illegitimate ends
+- THEN:
+	- the contract is _voidable_.
+
+## Formation Defense: Undue Influence
+- LET:
+	- 𝐴,𝐵 ∈ \{ parties to a contract \}
+- IF:
+	1. [ ] 𝐴 induces 𝐵's assent by
+	2. [ ] using 𝐵's susceptibility to pressure
+	<AND/>
+	3. [ ] applying excessive pressure on 𝐵
+- THEN:
+	- the contract is _voidable_.
+
+
+
+
+		
+ 

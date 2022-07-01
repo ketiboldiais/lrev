@@ -1,19 +1,20 @@
+
+
 .light {
-	--background-color: rgb(246, 255, 255);
+	--background-color: rgb(123, 123, 123);
 	--page-color: rgb(255, 255, 255);
 	--tooltip-color: rgb(255, 254, 244);
-	--title-bar-color: rgb(246, 255, 255);
-	--title-bar-text-color: rgb(101, 128, 172);
-	--h2-color: firebrick;
-	--nav-background-color: #dee4e7;
+	--title-bar-color: var(--background-color);
+	--title-bar-text-color: rgb(19, 110, 255);
+	--nav-background-color: var(--page-color);
 	--nav-text-color: #37474f;
 	--text-color: #393E46;
 	--doubly-linked-list-rect-fill: rgb(136, 207, 207);
-	--doubly-linked-list-focus-rect-fill: rgb(246, 177, 165);
+	--doubly-linked-list-focus-rect-fill: rgb(84, 62, 59);
 	--hover-background-color: teal;
 	--border-bottom: solid thin cyan;
-	--box-shadow: 1px 4px 10px 4px rgba(34, 34, 34, 0.339);
-	--heading-color: #487298;
+	--box-shadow: 1px 4px 10px 4px rgba(34, 34, 34, 0.776);
+	--heading-color: var(--text-color);
 	--flowchart-stroke-color: #487298;
 	--flowchart-text-color: #487298;
 	--link-hover-background-color: black;
@@ -36,6 +37,8 @@
 	--purple: rgb(171, 90, 171);
 	--orange: orange;
 	--grey: grey;
+	--lavender: purple;
+	--navy: blue;
 }
 
 .dark {
@@ -45,7 +48,7 @@
 	--title-bar-color: rgb(38, 42, 73);
 	--title-bar-text-color: rgb(180, 163, 236);
 	--page-title-color: #866cce;
-	--h2-color: #c282ff;
+	--heading-color: #a5ffd2;
 	--nav-background-color: rgb(45, 0, 135);
 	--nav-text-color: rgb(214, 214, 214);
 	--text-color: rgb(230, 230, 230);
@@ -54,7 +57,6 @@
 	--hover-background-color: teal;
 	--border-bottom: solid thin cyan;
 	--box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.8);
-	--heading-color: rgb(244, 198, 64);
 	--flowchart-stroke-color: gold;
 	--flowchart-text-color: teal;
 	--link-hover-background-color: black;
@@ -77,57 +79,26 @@
 	--purple: purple;
 	--orange: orange;
 	--grey: grey;
+	--lavender: rgb(255, 113, 255);
+	--navy: rgb(161, 250, 255);
+
+}
+.dark img {
+	filter:invert(100%);
 }
 
-@font-face {
-	font-family: "serif_main";
-	src: url("./fonts/serif_main_regular.woff");
-	font-style: normal;
-	font-weight: normal;
-}
-@font-face {
-	font-family: "serif_main";
-	src: url("./fonts/serif_main_italics.woff");
-	font-style: italic;
-	font-weight: normal;
-}
-@font-face {
-	font-family: "serif_main";
-	src: url("./fonts/serif_main_bold.woff");
-	font-style: normal;
-	font-weight: bold;
-}
-@font-face {
-	font-family: "sans_serif_main";
-	src: url("./fonts/sans_serif_main.woff");
-	font-weight: bold;
-	font-style: normal;
-}
 html,
 body {
 	padding: 0;
 	margin: 0;
-	background-color: rgb(85, 85, 85);
-	font-family: "Roboto Mono", "serif_main", -apple-system,
-		BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
-		Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-	height: 100%;
-	overflow: hidden;
+	background-color: var(--background-color);
+	font-family: monospace
 }
 
 
-::-webkit-scrollbar {
-	width: 10px;
-	height: 7px;
-}
-::-webkit-scrollbar-thumb {
-	background-color: #d6dee1;
-	border-radius: 4px;
-	border: 1px solid transparent;
-	background-clip: content-box;
-}
-::-webkit-scrollbar-thumb:hover {
-	background-color: #a8bbbf;
+
+h1,h2,h3,h4,h5,h6 {
+	/* font-family: "IMF"; */
 }
 
 h2, h3, h4, h5, h6 {
@@ -138,41 +109,40 @@ h2, h3, h4, h5, h6 {
 
 html {font-size: 12px}
 
-body {
-	font-size: clamp(0.8rem, 1rem, 1.1rem);
+
+h1 {
+	text-align: center;
+	margin-top: 4rem;
+	margin-bottom: 10rem;
+}
+dfn {
+	float: right;
+	width: 30%;
+	border: solid thin lightgrey;
+	padding: 0 0.5em;
+	font-size: 0.8rem;
 }
 
-h1 { text-align: center; }
-
 /* Font sizes for headings */
-	h1 {font-size: 3rem; color: var(--h2-color)}
-	h2 {font-size: 1.8rem; color: var(--h2-color)}
+	h1 {font-size: 3rem;}
+	h2 {font-size: 1.8rem;}
 	h3 {font-size: 1.6rem;}
 	h4 {font-size: 1.4rem;}
 	h5 {font-size: 1.1rem;}
 	h6 {font-size: 1rem;}
 
-text,
-code {
-	font-family: "Roboto Mono", monospace;
-}
-:not(pre) > code {
-	font-size: 0.85em;
-	white-space: pre;
-}
-
 ol {
-	padding: 0 0 0 2.5em;
+	padding: 0 0 0 2em;
 }
 
 ul {
-	padding-left: 1.4em;
+	padding-left: 1.5em;
 }
 
 li,
 p {
-	font-family: "Fira Code";
-	padding: 2px 0;
+	/* font-family: "Fira Code"; */
+	/* padding: 2px 0; */
 }
 li p {padding: 0; margin: 0}
 ol {list-style: decimal;}
@@ -183,12 +153,12 @@ ol li ol li ol li ol li ol {list-style: lower-alpha;}
 ul li ul li ul {list-style: disc;}
 
 a {
-	color: var(--blue);
+	color: var(--navy);
 	text-decoration: underline;
 	transition: all 0.3s ease;
 }
 a:visited {
-	color: none;
+	color: var(--lavender);
 	outline: 0;
 }
 a:hover {
@@ -217,6 +187,22 @@ figure {
 	display: flex;
 	flex: 1;
 	justify-content: center;
+}
+
+figcaption {font-size: 0.8rem}
+
+figure.flowchart div {
+	display: flex;
+	justify-content: center;
+}
+
+figure.flowchart svg {
+	/* display: flex; */
+	/* flex: 1; */
+	width: clamp(50%, 35vw, 100%);
+	height: clamp(50%, 35vw, 100%);
+	/* width: clamp(20%, 50vw, 50%); */
+	/* border: solid thin red; */
 }
 
 table {
@@ -351,3 +337,10 @@ table ul, table ol {
 .ftree-node-level-1 circle {fill: rgb(207, 252, 252); stroke: var(--teal);}
 .ftree-edge line {stroke: var(--teal)}
 
+.katex {
+	font-size: 1em !important;
+}
+
+* {
+	box-sizing: border-box;
+}

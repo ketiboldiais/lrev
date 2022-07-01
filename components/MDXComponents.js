@@ -1,6 +1,7 @@
 import Image from "next/image";
 import FRCP from "./citator/FRCP";
 import Red from "./Red";
+import {Fig} from "./Fig";
 import {Graph} from "./enfig/components/Graph/Graph";
 import {Network} from "./enfig/components/Network/network";
 import {FTree} from "./enfig/components/FTree/FTree";
@@ -22,7 +23,7 @@ import {DoublyLinkedList} from "./enfig/components/DoublyLinkedList/DoublyLinked
 import {Stack} from "./enfig/components/Stack/Stack";
 import {Queue} from "./enfig/components/Queue/Queue";
 import {Tree} from "./enfig/components/Tree/Tree";
-import {Plot} from "./enfig/components/Plot/Plot";
+import {Plot} from "./illus/components/Plot/Plot";
 import {TangledTree} from "./enfig/components/TangledTree/TangledTree";
 import {BubblePack} from "./enfig/components/BubblePack/BubblePack";
 import {HexMap} from "./enfig/components/HexMap/HexMap";
@@ -37,7 +38,8 @@ import UCC from "./citator/UCC";
 import USC from "./citator/USC";
 import Term from "./Term";
 import Float from "./Float/Float";
-import { Case } from "./citator/Case/Case";
+import {Case} from "./citator/Case/Case";
+import {Flow} from "./illus/components/Flow/Flow";
 
 import Header from "./Header";
 const MDXComponents = {
@@ -55,7 +57,9 @@ const MDXComponents = {
       <figcaption className={ImgStyles.figcaption}>{props.alt}</figcaption>
     </div>
   ),
+  Flow,
   Float,
+  Fig,
   Case,
   OR,
   AND,
